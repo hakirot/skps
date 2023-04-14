@@ -11,13 +11,13 @@ cmd="tree -C -a --noreport \
     -I *.png \
     -L 3 ."
 
-function run {
-	clear
-  $cmd
-}
+#function run {
+#	clear
+$cmd
+#}
 
-run
+#run
 
-while eval "$notify"; do
-    run
-done
+#while eval "$notify"; do
+#    run
+#done
