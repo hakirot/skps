@@ -2,15 +2,14 @@
 # install tree
 # install inotifytools
 
-#notify="inotifywait @./node_modules -r -e close_write -e access -e delete . &> /dev/null"
-notify="inotifywait @./node_modules -r -e close_write -e access . &> /dev/null"
+notify="inotifywait @./node_modules -r -e close_write -e access -e delete . &> /dev/null"
 cmd="git status -s"
-cmd2="git diff"
+cmd2="git --no-pager diff | bat --paging=never --theme ansi"
 
 function run {
 	clear
-$cmd
-$cmd2
+  eval "$cmd"
+  eval "$cmd2"
 }
 
 run
