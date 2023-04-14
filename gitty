@@ -1,0 +1,20 @@
+#!/bin/bash
+# install tree
+# install inotifytools
+
+#notify="inotifywait @./node_modules -r -e close_write -e access -e delete . &> /dev/null"
+notify="inotifywait @./node_modules -r -e close_write -e access . &> /dev/null"
+cmd="git status -s"
+cmd2="git diff"
+
+function run {
+	clear
+$cmd
+$cmd2
+}
+
+run
+
+while eval "$notify"; do
+    run
+done
