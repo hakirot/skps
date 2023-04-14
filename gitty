@@ -10,18 +10,33 @@ cmd2="git --no-pager diff HEAD | \
   bat \
   --paging=never \
   -n"
-cmd3="bat --paging=never --wrap=never -d -p"
+
+cmd3="bat --paging=never \
+  --wrap=never \
+  -d \
+  -p"
 
 function run {
 	clear
-  sleep .2
+  sleep .13
 #  eval "$cmd"
 #  eval "$cmd2"
-#  files=${files%???}
-  eval "$cmd"
+
+#  eval "$cmd"
   files=`git status -s`
-  eval "$cmd3 ${files:3}"
+#  eval "$cmd3 ${files:3}"
+
+  echo " ------"
+  $cmd
+  echo " ------"
+  while IFS= read -r line
+  do
+    echo "${line:3}"
+    eval "$cmd3 ${line:3}"
+  done < <($cmd)
+
 }
+
 
 run
 
