@@ -4,14 +4,23 @@
 #   inotifytools
 #   bat
 
-notify="inotifywait @./node_modules -r -e close_write -e access -e delete . &> /dev/null"
+notify="inotifywait @./node_modules -r -e close_write -e access . &> /dev/null"
 cmd="git status -s"
-cmd2="git --no-pager diff HEAD | bat --paging=never --theme ansi"
+cmd2="git --no-pager diff HEAD | \
+  bat \
+  --paging=never \
+  -n"
+cmd3="bat --paging=never --wrap=never -d -p"
 
 function run {
 	clear
+  sleep .2
+#  eval "$cmd"
+#  eval "$cmd2"
+#  files=${files%???}
   eval "$cmd"
-  eval "$cmd2"
+  files=`git status -s`
+  eval "$cmd3 ${files:3}"
 }
 
 run
