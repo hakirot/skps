@@ -1,56 +1,90 @@
 #!/bin/bash
 # Dependencies
-#   tree
 #   inotifytools
 #   bat
+#   exa
+
+GREEN='\033[0;32m'
+YELLOW='\033[0;33m'
+NC='\033[0m'
 
 notify="inotifywait @./node_modules -r -e close_write -e access . &> /dev/null"
-cmd="git status -s"
+gstat="git status -s"
 cmd3="bat --paging=never \
-  --wrap=never \
+  --wrap never \
+  --style=numbers,changes,grid,snip \
+  --theme=Dracula \
+  -f \
   -d"
 
 function run {
+  flag=0
 
   clear
-  sleep .15
+  sleep .5
 
-  if [ -z "$($cmd)" ]
+  if [ -z "$($gstat)" ]
   then
     count=0
     while IFS= read -r line
     do
+
       if (( count == 0 ))
       then
+        echo -e "${GREEN}$(git rev-parse --show-toplevel)${NC}"
         echo $line
       fi
+
       if (( count == 1 ))
       then
+
         if [[ ${line:41} == "in'." ]]
         then
-          echo "Up to date."
+          echo -e "${GREEN}Up to date.${NC}"
+          sleep .25
+          exa -T --git-ignore
         else
           echo "${line:41}"
         fi
       fi
+
+      if (( count == 2 ))
+      then
+        flag=1
+      fi
       count=$((count+1))
     done < <(git status)
+
+    if (( flag == 0 ))
+    then
+      echo -e "${YELLOW}Remote repository not set.${NC}"
+      exa -T --git-ignore
+    fi
+
   else
-    echo " ------"
-    $cmd
-    echo " ------"
+    $gstat
+    echo "^^^"
 
     while IFS= read -r line
     do
+
+      # If diff(s)
       if ! [ -z "$($cmd3 ${line:3})" ]
       then
+        flag=1
         echo "${line:3}"
+        # Show diff
         eval "$cmd3 ${line:3}"
       fi
-    done < <($cmd)
+    done < <($gstat)
+
+    if (( flag == 0 ))
+    then
+      exa -T --git-ignore
+      flag=1
+    fi
   fi
 }
-
 
 run
 
