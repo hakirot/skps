@@ -26,12 +26,10 @@ function run {
       fi
       if (( count == 1 ))
       then
-        re='^[0-9]+$'
-        if [[ ${line:41:42} =~ $re ]]
+        if [[ ${line:41} == "'in'." ]]
         then
           echo "Up to date."
         else
-          echo "${line:41:1}"
           echo "${line:41}"
         fi
       fi
