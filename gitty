@@ -23,7 +23,7 @@ function run {
 
   if [ -z "$($cmd)" ]
   then
-    echo nothing
+    echo "<-- No Changes -->"
   else
     echo " ------"
     $cmd
