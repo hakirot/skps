@@ -17,23 +17,24 @@ cmd3="bat --paging=never \
   -p"
 
 function run {
+
 	clear
   sleep .13
-#  eval "$cmd"
-#  eval "$cmd2"
 
-#  eval "$cmd"
-  files=`git status -s`
-#  eval "$cmd3 ${files:3}"
+  if [ -z "$cmd" ]
+  then
+    echo "empty"
+  else
+    echo " ------"
+    $cmd
+    echo " ------"
 
-  echo " ------"
-  $cmd
-  echo " ------"
-  while IFS= read -r line
-  do
-    echo "${line:3}"
-    eval "$cmd3 ${line:3}"
-  done < <($cmd)
+    while IFS= read -r line
+    do
+      echo "${line:3}"
+      eval "$cmd3 ${line:3}"
+    done < <($cmd)
+  fi
 
 }
 
