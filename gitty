@@ -32,7 +32,7 @@ function run {
       fi
       if (( count == 1 ))
       then
-        echo "${line:39}"
+        echo "${line:41}"
       fi
       count=$((count+1))
     done < <(git status)
