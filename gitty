@@ -26,7 +26,7 @@ function run {
       fi
       if (( count == 1 ))
       then
-        if [[ ${line:41} == "'in'." ]]
+        if [[ ${line:41} == "in'." ]]
         then
           echo "Up to date."
         else
