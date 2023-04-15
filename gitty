@@ -32,7 +32,13 @@ function run {
       fi
       if (( count == 1 ))
       then
-        echo "${line:41}"
+        re='^[0-9]+$'
+        if ! [[ $yournumber =~ $re ]]
+        then
+          echo "Up to date."
+        else
+          echo "${line:41}"
+        fi
       fi
       count=$((count+1))
     done < <(git status)
