@@ -18,10 +18,10 @@ cmd3="bat --paging=never \
 
 function run {
 
-	clear
-  sleep .13
+  clear
+  sleep .15
 
-  if [ -z "$cmd" ]
+  if [ -z "$($cmd)" ]
   then
     echo "empty"
   else
