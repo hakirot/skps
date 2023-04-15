@@ -23,7 +23,12 @@ function run {
 
   if [ -z "$($cmd)" ]
   then
-    echo "<-- No Changes -->"
+    count=0
+    while IFS= read -r line
+    do
+      echo "${line:10}"
+      count=$((count+1))
+    done < <(git status)
   else
     echo " ------"
     $cmd
