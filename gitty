@@ -31,6 +31,7 @@ function run {
         then
           echo "Up to date."
         else
+          echo "${line:41:42}"
           echo "${line:41}"
         fi
       fi
