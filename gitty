@@ -26,9 +26,13 @@ function run {
     count=0
     while IFS= read -r line
     do
+      if (( count == 0 ))
+      then
+        echo $line
+      fi
       if (( count == 1 ))
       then
-        echo "${line:10}"
+        echo "${line:39}"
       fi
       count=$((count+1))
     done < <(git status)
