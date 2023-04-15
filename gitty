@@ -6,15 +6,9 @@
 
 notify="inotifywait @./node_modules -r -e close_write -e access . &> /dev/null"
 cmd="git status -s"
-cmd2="git --no-pager diff HEAD | \
-  bat \
-  --paging=never \
-  -n"
-
 cmd3="bat --paging=never \
   --wrap=never \
-  -d \
-  -p"
+  -d"
 
 function run {
 
@@ -49,11 +43,13 @@ function run {
 
     while IFS= read -r line
     do
-      echo "${line:3}"
-      eval "$cmd3 ${line:3}"
+      if ! [ -z "$($cmd3 ${line:3})" ]
+      then
+        echo "${line:3}"
+        eval "$cmd3 ${line:3}"
+      fi
     done < <($cmd)
   fi
-
 }
 
 
