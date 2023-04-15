@@ -27,7 +27,7 @@ function run {
       if (( count == 1 ))
       then
         re='^[0-9]+$'
-        if ! [[ $yournumber =~ $re ]]
+        if ! [[ ${line:41} =~ $re ]]
         then
           echo "Up to date."
         else
