@@ -11,3 +11,7 @@ This script will soon be able to search the system for relevant files with an 'a
 Required inotifytools, bat, and exa
 
 Shows the git diff of the monitored filesystem upon updates and changes.
+
+# Dynamake
+
+Recompile C programs as they are written

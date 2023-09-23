@@ -1,0 +1,17 @@
+#!/bin/bash
+# install tree
+# install inotifytools
+
+notify="inotifywait -r -e close_write . &> /dev/null"
+cmd="make"
+
+function run {
+  clear
+  $cmd
+}
+
+run
+
+while eval "$notify"; do
+  run
+done
