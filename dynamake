@@ -6,7 +6,10 @@ notify="inotifywait -r -e close_write . &> /dev/null"
 cmd="make"
 
 function run {
+  echo "Starting build.."
+  sleep 1
   clear
+  date +%I:%M
   $cmd
 }
 
@@ -14,4 +17,5 @@ run
 
 while eval "$notify"; do
   run
+  sleep 4
 done

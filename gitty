@@ -8,7 +8,7 @@ GREEN='\033[0;32m'
 YELLOW='\033[0;33m'
 NC='\033[0m'
 
-notify="inotifywait @./node_modules -r -e close_write . &> /dev/null"
+notify="inotifywait @./.git @./node_modules -r -e close_write . &> /dev/null"
 gstat="git status -s"
 cmd3="bat --paging=never \
   --wrap never \
@@ -89,5 +89,7 @@ function run {
 run
 
 while eval "$notify"; do
+    echo "gitting.."
+    sleep 3
     run
 done
