@@ -2,13 +2,13 @@
 # Dependencies
 #   inotifytools
 #   bat
-#   exa
+#   eza - community fork of exa
 
 GREEN='\033[0;32m'
 YELLOW='\033[0;33m'
 NC='\033[0m'
 
-notify="inotifywait @./node_modules -r -e close_write -e access . &> /dev/null"
+notify="inotifywait @./node_modules -r -e close_write . &> /dev/null"
 gstat="git status -s"
 cmd3="bat --paging=never \
   --wrap never \
@@ -42,7 +42,7 @@ function run {
         then
           echo -e "${GREEN}Up to date.${NC}"
           sleep .25
-          exa -T --git-ignore
+          #eza -T --git-ignore
         else
           echo "${line:41}"
         fi
@@ -58,31 +58,31 @@ function run {
     if (( flag == 0 ))
     then
       echo -e "${YELLOW}Remote repository not set.${NC}"
-      exa -T --git-ignore
+      #eza -T --git-ignore
     fi
 
   else
     $gstat
-    echo "^^^"
+    echo "---"
 
-    while IFS= read -r line
-    do
+#   while IFS= read -r line
+#   do
 
-      # If diff(s)
-      if ! [ -z "$($cmd3 ${line:3})" ]
-      then
-        flag=1
-        echo "${line:3}"
-        # Show diff
-        eval "$cmd3 ${line:3}"
-      fi
-    done < <($gstat)
+#     # If diff(s)
+#     if ! [ -z "$($cmd3 ${line:3})" ]
+#     then
+#       flag=1
+#       echo "${line:3}"
+#       # Show diff
+#       eval "$cmd3 ${line:3}"
+#     fi
+#   done < <($gstat)
 
-    if (( flag == 0 ))
-    then
-      exa -T --git-ignore
-      flag=1
-    fi
+#   if (( flag == 0 ))
+#   then
+#     #eza -T --git-ignore
+#     flag=1
+#   fi
   fi
 }
 

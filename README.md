@@ -1,6 +1,8 @@
 # Treek
 
-Requires inotify-tools and tree
+Requirements:
+    inotify-tools
+    tree
 
 Refreshes tree upon updates to the filesystem that's being monitored
 
@@ -8,7 +10,9 @@ This script will soon be able to search the system for relevant files with an 'a
 
 # Gitty
 
-Required inotifytools, bat, and exa
+Requirements:
+    inotify-tools
+    tree
 
 Shows the git diff of the monitored filesystem upon updates and changes.
 
