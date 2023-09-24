@@ -89,7 +89,15 @@ function run {
 run
 
 while eval "$notify"; do
-    echo "gitting.."
-    sleep 3
+    clear
+    echo "."
+    sleep 1
+    clear
+    echo ".."
+    sleep 1
+    clear
+    echo "..."
+    sleep 1
+    clear
     run
 done

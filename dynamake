@@ -6,11 +6,18 @@ notify="inotifywait -r -e close_write . &> /dev/null"
 cmd="make"
 
 function run {
+  make clean
   echo "Starting build.."
   sleep 1
   clear
   date +%I:%M
   $cmd
+  if [ $? -eq 0 ]
+  then
+    echo Built.
+  else
+    echo Error.
+  fi
 }
 
 run
