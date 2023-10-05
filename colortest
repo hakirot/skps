@@ -1,5 +1,6 @@
 #!/bin/bash
 
+printf "      bkgd  blak  red   gren  yllw  blue  mage  cyan  whit\n"
 printf "          "
 for b in 0 1 2 3 4 5 6 7; do printf "  4${b}m "; done
 echo
