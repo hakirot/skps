@@ -1,8 +1,6 @@
 #!/bin/bash
 # Dependencies
 #   inotifytools
-#   bat
-#   eza - community fork of exa
 
 GREEN='\033[0;32m'
 YELLOW='\033[0;33m'
@@ -10,21 +8,15 @@ NC='\033[0m'
 
 notify="inotifywait @./.git @./node_modules -r -e close_write . &> /dev/null"
 gstat="git status -s"
-cmd3="bat --paging=never \
-  --wrap never \
-  --style=numbers,changes,grid,snip \
-  --theme=Dracula \
-  -f \
-  -d"
 
 function run {
   flag=0
 
   clear
-  sleep .5
 
-  if [ -z "$($gstat)" ]
+  if [ -z "$($gstat)" -a $? == 0 ]
   then
+
     count=0
     while IFS= read -r line
     do
@@ -41,8 +33,6 @@ function run {
         if [[ ${line:41} == "in'." ]]
         then
           echo -e "${GREEN}Up to date.${NC}"
-          sleep .25
-          #eza -T --git-ignore
         else
           echo "${line:41}"
         fi
@@ -58,31 +48,18 @@ function run {
     if (( flag == 0 ))
     then
       echo -e "${YELLOW}Remote repository not set.${NC}"
-      #eza -T --git-ignore
     fi
 
   else
     $gstat
+
+    if [ $? != 0 ]
+    then
+      echo -e "${YELLOW}Exited.${NC}"
+      exit
+    fi
+
     echo "---"
-
-#   while IFS= read -r line
-#   do
-
-#     # If diff(s)
-#     if ! [ -z "$($cmd3 ${line:3})" ]
-#     then
-#       flag=1
-#       echo "${line:3}"
-#       # Show diff
-#       eval "$cmd3 ${line:3}"
-#     fi
-#   done < <($gstat)
-
-#   if (( flag == 0 ))
-#   then
-#     #eza -T --git-ignore
-#     flag=1
-#   fi
   fi
 }
 
@@ -94,9 +71,6 @@ while eval "$notify"; do
     sleep 1
     clear
     echo ".."
-    sleep 1
-    clear
-    echo "..."
     sleep 1
     clear
     run
