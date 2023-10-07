@@ -1,9 +1,41 @@
 #!/bin/sh
 
-# Can we run commands after attach session..?
+# Hell Yeah
+session="SARA"
+window=1
 
-tmux -2 attach-session -d
-tmux new-session -d 'sara'
-tmux split-window -v 'time'
-tmux split-window -h
+tmux new-session -d -s $session
 
+tmux rename-window -t $session:$window 'main'
+
+tmux send-keys -t $session:$window 'git status' C-m
+
+tmux send-keys -t $session:$window 'tmux split-pane -d' C-m
+tmux send-keys -t $session:$window 'tmux split-pane -d' C-m
+tmux send-keys -t $session:$window 'tmux split-pane -d' C-m
+tmux send-keys -t $session:$window 'tmux split-pane -d' C-m
+
+tmux send-keys -t $session:$window 'tmux nextl' C-m
+tmux send-keys -t $session:$window 'tmux nextl' C-m
+tmux send-keys -t $session:$window 'tmux nextl' C-m
+
+tmux send-keys -t $session:$window 'tmux resize-pane -U' C-m
+tmux send-keys -t $session:$window 'tmux resize-pane -U' C-m
+tmux send-keys -t $session:$window 'tmux resize-pane -U' C-m
+tmux send-keys -t $session:$window 'tmux resize-pane -U' C-m
+tmux send-keys -t $session:$window 'tmux resize-pane -U' C-m
+tmux send-keys -t $session:$window 'tmux resize-pane -U' C-m
+tmux send-keys -t $session:$window 'tmux resize-pane -U' C-m
+tmux send-keys -t $session:$window 'tmux resize-pane -U' C-m
+tmux send-keys -t $session:$window 'tmux resize-pane -U' C-m
+tmux send-keys -t $session:$window 'tmux resize-pane -U' C-m
+
+tmux send-keys -t %0 'tmux split-pane -h -d' C-m
+tmux send-keys -t %0 'tmux split-pane -h -d' C-m
+tmux send-keys -t %0 'tmux select-layout -E' C-m
+
+tmux attach-session -d
+
+# This is getting janky. These commands do not run in sequence, 
+# they are up to a bit of chance. Orderly behavior not guaranteed
+# Need to look into doing all of these with the xdotool instead
