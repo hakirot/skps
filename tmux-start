@@ -29,7 +29,12 @@ tmux send-keys -t $session:$window 'tmux resize-pane -U' C-m
 tmux send-keys -t $session:$window 'tmux resize-pane -U' C-m
 tmux send-keys -t $session:$window 'tmux resize-pane -U' C-m
 tmux send-keys -t $session:$window 'tmux resize-pane -U' C-m
+tmux send-keys -t $session:$window 'tmux resize-pane -U' C-m
+tmux send-keys -t $session:$window 'tmux resize-pane -U' C-m
+tmux send-keys -t $session:$window 'tmux resize-pane -U' C-m
+tmux send-keys -t $session:$window 'tmux resize-pane -U' C-m
 
+tmux send-keys -t %0 'tmux split-pane -h -d' C-m
 tmux send-keys -t %0 'tmux split-pane -h -d' C-m
 tmux send-keys -t %0 'tmux split-pane -h -d' C-m
 tmux send-keys -t %0 'tmux select-layout -E' C-m
