@@ -12,8 +12,8 @@ function run {
   $cmd
   if [ $? -eq 0 ]
   then
-    sleep 1
     echo Built.
+    sleep 1
   else
     echo Error.
   fi
