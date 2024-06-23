@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -eou pipefail
+
 wall=$(find ~/pix/wall/ | shuf -n 1)
 
 # SAVES
@@ -18,13 +20,13 @@ wal -c
 # Generate color scheme 
 if [[ $wall =~ "clearing" ]]; then
   wal --theme custom-clearing
-else if [[ $wall =~ "city" ]]; then
+elif [[ $wall =~ "city" ]]; then
   wal --theme custom-city
-else if [[ $wall =~ "futurepunk" ]]; then
+elif [[ $wall =~ "futurepunk" ]]; then
   wal --theme custom-futurepunk
-else if [[ $wall =~ "newyorknight" ]]; then
+elif [[ $wall =~ "newyorknight" ]]; then
   wal --theme custom-newyorknight
-else if [[ $wall =~ "rocket" ]]; then
+elif [[ $wall =~ "rocket" ]]; then
   wal --theme custom-rocket
 else
   wal -i $HOME/pix/wall/$wall
