@@ -2,7 +2,11 @@
 
 set -eou pipefail
 
-wall=$(find ~/pix/wall/ | shuf -n 1)
+if  [[ $# -eq 0 ]]; then
+  wall=$(find ~/pix/wall/ | shuf -n 1)
+else
+  wall=$1
+fi
 
 # SAVES
 #wall=city
@@ -11,8 +15,10 @@ wall=$(find ~/pix/wall/ | shuf -n 1)
 #wall=newyorknight
 wall=rocket
 
+echo $wall
+
 # Add this as background wallpaper
-xwallpaper --zoom $HOME/pix/wall/$wall
+xwallpaper --zoom $wall
 
 # Clear
 wal -c
@@ -29,7 +35,7 @@ elif [[ $wall =~ "newyorknight" ]]; then
 elif [[ $wall =~ "rocket" ]]; then
   wal --theme custom-rocket
 else
-  wal -i $HOME/pix/wall/$wall
+  wal -i $wall
 fi
 
 xdotool key super+F5
