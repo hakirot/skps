@@ -20,3 +20,6 @@ Shows the git diff of the monitored filesystem upon updates and changes.
 
 Run make as files are written
 
+# Newlook & custom_walz
+
+Generate custom colorscheme with rendered wallpapers
