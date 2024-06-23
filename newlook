@@ -1,0 +1,33 @@
+#!/bin/sh
+
+wall=$(find ~/pix/wall/ | shuf -n 1)
+
+# SAVES
+#wall=city
+#wall=clearing
+#wall=futurepunk
+#wall=newyorknight
+wall=rocket
+
+# Add this as background wallpaper
+xwallpaper --zoom $HOME/pix/wall/$wall
+
+# Clear
+wal -c
+
+# Generate color scheme 
+if [[ $wall =~ "clearing" ]]; then
+  wal --theme custom-clearing
+else if [[ $wall =~ "city" ]]; then
+  wal --theme custom-city
+else if [[ $wall =~ "futurepunk" ]]; then
+  wal --theme custom-futurepunk
+else if [[ $wall =~ "newyorknight" ]]; then
+  wal --theme custom-newyorknight
+else if [[ $wall =~ "rocket" ]]; then
+  wal --theme custom-rocket
+else
+  wal -i $HOME/pix/wall/$wall
+fi
+
+xdotool key super+F5
