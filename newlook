@@ -2,11 +2,7 @@
 
 set -eou pipefail
 
-if  [[ $# -eq 0 ]]; then
-  wall=$(find ~/pix/wall/ | shuf -n 1)
-else
-  wall=$1
-fi
+WALLS_DIR=/home/hakirot/pix/wall
 
 # SAVES
 #wall=city
@@ -15,7 +11,16 @@ fi
 #wall=newyorknight
 wall=rocket
 
-echo $wall
+# Prioritize command-line arg
+if  [[ $# -eq 1 ]]; then
+  wall=$1
+# If no save, randomize
+elif [ -z ${wall+x} ]; then
+  wall=$(find ~/pix/wall/ | shuf -n 1)
+# Else execute save
+else
+  wall=$WALLS_DIR/$wall
+fi
 
 # Add this as background wallpaper
 xwallpaper --zoom $wall
