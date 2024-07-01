@@ -11,8 +11,10 @@ futurepunk=futurepunk
 newyorknight=newyorknight
 rocket=rocket
 sunset=sunset
+farfaraway=farfaraway
 
-wall=$sunset
+# SAVE LOAD
+#wall=$farfaraway
 
 # Prioritize command-line arg
 if  [[ $# -eq 1 ]]; then
@@ -42,6 +44,8 @@ elif [[ $wall =~ "newyorknight" ]]; then
   wal --theme custom-newyorknight
 elif [[ $wall =~ "rocket" ]]; then
   wal --theme custom-rocket
+elif [[ $wall =~ "farfaraway" ]]; then
+  wal --theme custom-farfaraway
 elif [[ $wall =~ "sunset" ]]; then
   wal --theme custom-sunset
 else
