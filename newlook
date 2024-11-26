@@ -4,17 +4,16 @@ set -eou pipefail
 
 WALLS_DIR=/home/hakirot/pix/wall
 
-# SAVES
-city=city
-clearing=clearing
-futurepunk=futurepunk
-newyorknight=newyorknight
-rocket=rocket
-sunset=sunset
-farfaraway=farfaraway
 
-# SAVE LOAD
-#wall=$farfaraway
+# LOAD SAVE
+#wall=city
+#wall=clearing
+wall=futurepunk
+#wall=newyorknight (could use edit)
+#wall=rocket
+#wall=sunset
+#wall=farfaraway
+#wall=timberland
 
 # Prioritize command-line arg
 if  [[ $# -eq 1 ]]; then
@@ -48,6 +47,8 @@ elif [[ $wall =~ "farfaraway" ]]; then
   wal --theme custom-farfaraway
 elif [[ $wall =~ "sunset" ]]; then
   wal --theme custom-sunset
+elif [[ $wall =~ "timberland" ]]; then
+  wal --theme custom-timberland
 else
   wal -i $wall
 fi
