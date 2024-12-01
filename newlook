@@ -14,6 +14,7 @@ WALLS_DIR=/home/hakirot/pix/wall
 #wall=sunset
 #wall=farfaraway
 #wall=timberland
+#wall=mountains
 
 # Prioritize command-line arg
 if  [[ $# -eq 1 ]]; then
@@ -49,6 +50,8 @@ elif [[ $wall =~ "sunset" ]]; then
   wal --theme custom-sunset
 elif [[ $wall =~ "timberland" ]]; then
   wal --theme custom-timberland
+elif [[ $wall =~ "mountains" ]]; then
+  wal --theme custom-mountains
 else
   wal -i $wall
 fi

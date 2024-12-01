@@ -1,10 +1,18 @@
 
-Source_dir
+With the currently editing theme set, get the file
 
-  /home/<user>/.cache/wal/colors.Xresources
+    ./get-current.sh #/home/<user>/.cache/wal/colors.json
 
-  > Process <
+Rename the file to theme name
 
-Target
+    mv colors.json [custom-theme]
 
-  /usr/lib/python3.12/site-packages/pywal/colorschemes/dark
+Process (Files do not need to be formatted before installing, just proper json)
+
+    nvim [custom-theme]
+
+Install
+
+  sudo cp custom-theme /usr/lib/python3.12/site-packages/pywal/colorschemes/dark
+
+Add save to newlook script
