@@ -8,7 +8,7 @@ WALLS_DIR=/home/hakirot/pix/wall
 # LOAD SAVE
 #wall=city
 #wall=clearing
-wall=futurepunk
+#wall=futurepunk
 #wall=newyorknight (could use edit)
 #wall=rocket
 #wall=sunset
