@@ -4,7 +4,6 @@ set -eou pipefail
 
 WALLS_DIR=/home/hakirot/pix/wall
 
-
 # LOAD SAVE
 #wall=city
 #wall=clearing
@@ -50,7 +49,7 @@ elif [[ $wall =~ "sunset" ]]; then
   wal --theme custom-sunset
 elif [[ $wall =~ "timberland" ]]; then
   wal --theme custom-timberland
-elif [[ $wall =~ "mountains" ]]; then
+elif [[ $wall =~ "mountains1" ]]; then
   wal --theme custom-mountains
 else
   wal -i $wall
