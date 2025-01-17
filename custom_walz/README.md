@@ -13,6 +13,6 @@ Process (Files do not need to be formatted before installing, just proper json)
 
 Install
 
-  sudo cp custom-theme /usr/lib/python3.12/site-packages/pywal/colorschemes/dark
+  sudo cp custom-theme /usr/lib/python3.13/site-packages/pywal/colorschemes/dark
 
 Add save to newlook script
