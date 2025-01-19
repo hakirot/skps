@@ -14,7 +14,7 @@ WALLS_DIR=/home/hakirot/pix/wall
 #wall=farfaraway
 #wall=timberland
 #wall=mountains
-wall=alpine3
+#wall=alpine3
 
 # Prioritize command-line arg
 if  [[ $# -eq 1 ]]; then
