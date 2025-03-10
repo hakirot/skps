@@ -54,6 +54,8 @@ elif [[ $wall =~ "mountains1" ]]; then
   wal --theme custom-mountains
 elif [[ $wall =~ "alpine3" ]]; then
   wal --theme custom-alpine3
+elif [[ $wall =~ "drgn" ]]; then
+  wal --theme custom-drgn
 else
   wal -i $wall
 fi

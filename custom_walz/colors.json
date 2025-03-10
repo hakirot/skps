@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/hakirot/pix/wall/drgn",
+    "alpha": "100",
+
+    "special": {
+        "background": "#090507",
+        "foreground": "#8dcacd",
+        "cursor": "#8dcacd"
+    },
+    "colors": {
+        "color0": "#090507",
+        "color1": "#F69A6A",
+        "color2": "#E75E8D",
+        "color3": "#196692",
+        "color4": "#607094",
+        "color5": "#996D8D",
+        "color6": "#D7D86A",
+        "color7": "#8dcacd",
+        "color8": "#628d8f",
+        "color9": "#F69A6A",
+        "color10": "#E75E8D",
+        "color11": "#196692",
+        "color12": "#607094",
+        "color13": "#996D8D",
+        "color14": "#D7D86A",
+        "color15": "#8dcacd"
+    }
+}
