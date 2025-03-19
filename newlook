@@ -59,5 +59,9 @@ fi
 # For vanilla dwm
 #xdotool key super+F5
 
-/home/hakirot/.config/polybar/bar.sh
+#source /home/hakirot/.config/polybar/bar.sh
 
+killall polybar
+sleep 1;
+MONITOR=eDP-1 polybar center --config=$HOME/.config/polybar/config.ini &
+MONITOR=HDMI-1 polybar secondary-center --config=$HOME/.config/polybar/config.ini &
