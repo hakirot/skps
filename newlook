@@ -33,27 +33,27 @@ wal -c
 
 # Generate color scheme 
 if [[ $wall =~ "clearing" ]]; then
-  wal --theme custom-clearing
+  wal -a 92 --theme custom-clearing
 elif [[ $wall =~ "city" ]]; then
-  wal --theme custom-city
+  wal -a 92 --theme custom-city
 elif [[ $wall =~ "futurepunk" ]]; then
-  wal --theme custom-futurepunk
+  wal -a 92 --theme custom-futurepunk
 elif [[ $wall =~ "rocket" ]]; then
-  wal --theme custom-rocket
+  wal -a 92 --theme custom-rocket
 elif [[ $wall =~ "farfaraway" ]]; then
-  wal --theme custom-farfaraway
+  wal -a 92 --theme custom-farfaraway
 elif [[ $wall =~ "timberland" ]]; then
-  wal --theme custom-timberland
+  wal -a 92 --theme custom-timberland
 elif [[ $wall =~ "mountains1" ]]; then
-  wal --theme custom-mountains
+  wal -a 92 --theme custom-mountains
 elif [[ $wall =~ "alpine3" ]]; then
-  wal --theme custom-alpine3
+  wal -a 92 --theme custom-alpine3
 elif [[ $wall =~ "keebz" ]]; then
-  wal --theme custom-keebz
+  wal -a 92 --theme custom-keebz
 elif [[ $wall =~ "drgn" ]]; then
-  wal --theme custom-drgn
+  wal -a 92 --theme custom-drgn
 else
-  wal -i $wall
+  wal -a 92 -i $wall
 fi
 
 # For vanilla dwm
