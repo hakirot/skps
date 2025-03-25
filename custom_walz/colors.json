@@ -1,28 +1,28 @@
 {
-    "wallpaper": "/home/hakirot/pix/wall/keebz",
-    "alpha": "100",
+    "wallpaper": "/home/hakirot/pix/wall/cozy",
+    "alpha": "92",
 
     "special": {
-        "background": "#1f252f",
-        "foreground": "#d3d4d7",
-        "cursor": "#d3d4d7"
+        "background": "#101015",
+        "foreground": "#e5ddd1",
+        "cursor": "#e5ddd1"
     },
     "colors": {
-        "color0": "#1f252f",
-        "color1": "#937584",
-        "color2": "#606A8F",
-        "color3": "#6892AA",
-        "color4": "#6FA8C1",
-        "color5": "#9297A5",
-        "color6": "#B0B1B8",
-        "color7": "#d3d4d7",
-        "color8": "#606A8F",
-        "color9": "#939496",
-        "color10": "#937584",
-        "color11": "#6892AA",
-        "color12": "#6FA8C1",
-        "color13": "#9297A5",
-        "color14": "#B0B1B8",
-        "color15": "#d3d4d7"
+        "color0": "#101015",
+        "color1": "#94705D",
+        "color2": "#C19D38",
+        "color3": "#AE896A",
+        "color4": "#DFA161",
+        "color5": "#F9CF6E",
+        "color6": "#577A84",
+        "color7": "#e5ddd1",
+        "color8": "#a09a92",
+        "color9": "#94705D",
+        "color10": "#C19D38",
+        "color11": "#AE896A",
+        "color12": "#DFA161",
+        "color13": "#F9CF6E",
+        "color14": "#577A84",
+        "color15": "#e5ddd1"
     }
 }
