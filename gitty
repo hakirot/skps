@@ -58,8 +58,6 @@ function run {
       echo -e "${YELLOW}Exited.${NC}"
       exit
     fi
-
-    echo "---"
   fi
 }
 
