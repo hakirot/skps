@@ -6,13 +6,6 @@ WALLS_DIR=/home/hakirot/pix/wall
 
 # LOAD SAVE
 #wall=city
-#wall=clearing
-#wall=futurepunk
-#wall=rocket
-#wall=farfaraway
-#wall=timberland
-#wall=mountains
-#wall=alpine3
 
 # Prioritize command-line arg
 if  [[ $# -eq 1 ]]; then
@@ -52,6 +45,12 @@ elif [[ $wall =~ "keebz" ]]; then
   wal -a 92 --theme custom-keebz
 elif [[ $wall =~ "drgn" ]]; then
   wal -a 92 --theme custom-drgn
+elif [[ $wall =~ "bladerunner" ]]; then
+  wal -a 92 --theme custom-bladerunner
+elif [[ $wall =~ "kohakunushi" ]]; then
+  wal -a 92 --theme custom-kohakunushi
+elif [[ $wall =~ "dystopia" ]]; then
+  wal -a 92 --theme custom-tomorrownightburns
 else
   wal -a 92 -i $wall
 fi
