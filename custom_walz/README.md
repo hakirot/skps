@@ -15,4 +15,8 @@ Install
 
   sudo cp custom-theme /usr/lib/python3.13/site-packages/pywal/colorschemes/dark
 
+Test
+
+  wal -a 92 --theme custom-[theme]
+
 Add save to newlook script
