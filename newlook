@@ -5,7 +5,7 @@ set -eou pipefail
 WALLS_DIR=/home/hakirot/pix/wall
 
 # LOAD SAVE
-wall=graffiti
+wall=road_through_desert
 
 # Prioritize command-line arg
 if  [[ $# -eq 1 ]]; then
@@ -53,6 +53,8 @@ elif [[ $wall =~ "dystopia" ]]; then
   wal -a 92 --theme custom-tomorrownightburns
 elif [[ $wall =~ "graffiti" ]]; then
   wal -a 92 --theme custom-graffiti
+elif [[ $wall =~ "road_through_desert" ]]; then
+  wal -a 92 --theme custom-road-through-desert
 else
   wal -a 92 -i $wall
 fi
