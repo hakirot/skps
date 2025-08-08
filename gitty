@@ -2,12 +2,18 @@
 # Dependencies
 #   inotifytools
 
+set -eou pipefail
+
 GREEN='\033[0;32m'
 YELLOW='\033[0;33m'
 NC='\033[0m'
 
 notify="inotifywait @./.git @./node_modules -r -e close_write . &> /dev/null"
 gstat="git status -s"
+
+error() {
+  echo "$@" 1>&2
+}
 
 function run {
   flag=0
@@ -61,15 +67,17 @@ function run {
   fi
 }
 
-run
-
-while eval "$notify"; do
-    clear
-    echo "."
-    sleep 1
-    clear
-    echo ".."
-    sleep 1
-    clear
-    run
-done
+if test -d $PWD/.git; then
+  while eval "$notify"; do
+      clear
+      echo "."
+      sleep 1
+      clear
+      echo ".."
+      sleep 1
+      clear
+      run
+  done
+else
+  error "Not a project root."
+fi
