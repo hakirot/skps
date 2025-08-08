@@ -56,6 +56,8 @@ elif [[ $wall =~ "graffiti" ]]; then
   wal -a 92 --theme custom-graffiti
 elif [[ $wall =~ "road_through_desert" ]]; then
   wal -a 92 --theme custom-road-through-desert
+elif [[ $wall =~ "koi" ]]; then
+  wal -a 92 --theme custom-koi
 else
   wal -a 92 -i $wall
 fi
