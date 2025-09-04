@@ -5,7 +5,7 @@ set -eou pipefail
 WALLS_DIR=/home/hakirot/pix/wall
 
 # LOAD SAVE
-wall=kohakunushi
+#wall=koi
 
 # Prioritize command-line arg
 if  [[ $# -eq 1 ]]; then
@@ -58,6 +58,8 @@ elif [[ $wall =~ "road_through_desert" ]]; then
   wal -a 92 --theme custom-road-through-desert
 elif [[ $wall =~ "koi" ]]; then
   wal -a 92 --theme custom-koi
+elif [[ $wall =~ "breathe" ]]; then
+  wal -a 92 --theme custom-breathe
 else
   wal -a 92 -i $wall
 fi
