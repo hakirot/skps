@@ -60,6 +60,8 @@ elif [[ $wall =~ "koi" ]]; then
   wal -a 92 --theme custom-koi
 elif [[ $wall =~ "breathe" ]]; then
   wal -a 92 --theme custom-breathe
+elif [[ $wall =~ "orbits" ]]; then
+  wal -a 92 --theme custom-orbits
 else
   wal -a 92 -i $wall
 fi
