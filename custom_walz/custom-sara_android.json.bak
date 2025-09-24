@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/hakirot/pix/screenshots/sarascifi.png",
+    "alpha": "92",
+
+    "special": {
+        "background": "#03030a",
+        "foreground": "#f0cb98",
+        "cursor": "#b1ecf5"
+    },
+    "colors": {
+        "color0": "#03030a",
+        "color1": "#a7def1",
+        "color2": "#f56a3c",
+        "color3": "#b19d84",
+        "color4": "#49c4f8",
+        "color5": "#e9ac8d",
+        "color6": "#a8d9b2",
+        "color7": "#eeca97",
+        "color8": "#a59988",
+        "color9": "#a7def1",
+        "color10": "#f56a3c",
+        "color11": "#b19d84",
+        "color12": "#49c4f8",
+        "color13": "#e9ac8d",
+        "color14": "#617d67",
+        "color15": "#eeca97"
+    }
+}
