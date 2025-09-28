@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/hakirot/pix/screenshots/sara_white.png",
+    "alpha": "92",
+
+    "special": {
+        "background": "#060709",
+        "foreground": "#e3d3de",
+        "cursor": "#ccd5e2"
+    },
+    "colors": {
+        "color0": "#060709",
+        "color1": "#c7adbd",
+        "color2": "#adb8c4",
+        "color3": "#9fafc2",
+        "color4": "#a3b5d1",
+        "color5": "#b4b5c2",
+        "color6": "#d6cbd3",
+        "color7": "#e3d3de",
+        "color8": "#8e959e",
+        "color9": "#a3989f",
+        "color10": "#adb8c4",
+        "color11": "#7d8691",
+        "color12": "#a3b5d1",
+        "color13": "#9697a3",
+        "color14": "#7a7177",
+        "color15": "#e3d3de"
+    }
+}
