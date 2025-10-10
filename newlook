@@ -35,18 +35,10 @@ elif [[ $wall =~ "rocket" ]]; then
   wal -a 92 --theme custom-rocket
 elif [[ $wall =~ "farfaraway" ]]; then
   wal -a 92 --theme custom-farfaraway
-elif [[ $wall =~ "timberland" ]]; then
-  wal -a 92 --theme custom-timberland
-elif [[ $wall =~ "mountains1" ]]; then
-  wal -a 92 --theme custom-mountains
 elif [[ $wall =~ "alpine3" ]]; then
   wal -a 92 --theme custom-alpine3
 elif [[ $wall =~ "keebz" ]]; then
   wal -a 92 --theme custom-keebz
-elif [[ $wall =~ "drgn" ]]; then
-  wal -a 92 --theme custom-drgn
-elif [[ $wall =~ "bladerunner" ]]; then
-  wal -a 92 --theme custom-bladerunner
 elif [[ $wall =~ "kohakunushi" ]]; then
   wal -a 92 --theme custom-kohakunushi
 elif [[ $wall =~ "dystopia" ]]; then
@@ -66,6 +58,8 @@ elif [[ $wall =~ "sara_android" ]]; then
   wal -a 92 --theme custom-sara_android
 elif [[ $wall =~ "sara_white" ]]; then
   wal -a 92 --theme custom-sara_white
+elif [[ $wall =~ "sara_orange" ]]; then
+  wal -a 92 --theme custom-sara_orange
 else
   wal -a 92 -i $wall
 fi
