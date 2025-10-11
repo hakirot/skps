@@ -42,7 +42,6 @@ elif [[ $wall =~ "keebz" ]]; then
 elif [[ $wall =~ "kohakunushi" ]]; then
   wal -a 92 --theme custom-kohakunushi
 elif [[ $wall =~ "dystopia" ]]; then
-# wal -a 92 --theme custom-tomorrownightburns
   wal -a 92 --theme custom-dystopia
 elif [[ $wall =~ "graffiti" ]]; then
   wal -a 92 --theme custom-graffiti
