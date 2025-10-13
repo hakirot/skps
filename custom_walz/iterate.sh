@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 set -eou pipefail
 
 sudo cp custom-sara_white.json /usr/lib/python3.13/site-packages/pywal/colorschemes/dark
