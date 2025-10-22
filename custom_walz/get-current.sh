@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 set -eou pipefail
 
 GREEN='\033[0;32m'

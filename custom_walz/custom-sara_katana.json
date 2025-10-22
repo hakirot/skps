@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/hakirot/pix/wall/sara_katana.jpg",
+    "alpha": "92",
+
+    "special": {
+        "background": "#100f0d",
+        "foreground": "#dbbf9e",
+        "cursor": "#dbbf9e"
+    },
+    "colors": {
+        "color0": "#100f0d",
+        "color1": "#8A2E1C",
+        "color2": "#903623",
+        "color3": "#A06A2F",
+        "color4": "#B86A40",
+        "color5": "#728963",
+        "color6": "#A79263",
+        "color7": "#dbbf9e",
+        "color8": "#99856e",
+        "color9": "#8A2E1C",
+        "color10": "#903623",
+        "color11": "#A06A2F",
+        "color12": "#B86A40",
+        "color13": "#728963",
+        "color14": "#3e4f33",
+        "color15": "#dbbf9e"
+    }
+}

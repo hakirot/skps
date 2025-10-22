@@ -1,11 +1,11 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 set -eou pipefail
 
 WALLS_DIR=/home/hakirot/pix/wall
 
 # LOAD SAVE
-wall=sara_white
+wall=sara_katana.jpg
 
 # Prioritize command-line arg
 if  [[ $# -eq 1 ]]; then
@@ -59,6 +59,8 @@ elif [[ $wall =~ "sara_white" ]]; then
   wal -a 92 --theme custom-sara_white
 elif [[ $wall =~ "sara_orange" ]]; then
   wal -a 92 --theme custom-sara_orange
+elif [[ $wall =~ "sara_katana" ]]; then
+  wal -a 92 --theme custom-sara_katana
 else
   wal -a 92 -i $wall
 fi
