@@ -43,4 +43,4 @@ tmux attach-session -d
 
 # This is getting janky. These commands do not run in sequence, 
 # they are up to a bit of chance. Orderly behavior not guaranteed
-# Need to look into doing all of these with the xdotool instead
+# xdotool might be better
