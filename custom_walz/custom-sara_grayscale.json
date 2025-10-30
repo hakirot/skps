@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/hakirot/pix/wall/sara_grayscale.jpg",
+    "alpha": "92",
+
+    "special": {
+        "background": "#0F0F0F",
+        "foreground": "#cecece",
+        "cursor": "#cecece"
+    },
+    "colors": {
+        "color0": "#0F0F0F",
+        "color1": "#858585",
+        "color2": "#C0C0C0",
+        "color3": "#929292",
+        "color4": "#858585",
+        "color5": "#999999",
+        "color6": "#AAAAAA",
+        "color7": "#cecece",
+        "color8": "#5B5B5B",
+        "color9": "#AAAAAA",
+        "color10": "#C0C0C0",
+        "color11": "#929292",
+        "color12": "#858585",
+        "color13": "#999999",
+        "color14": "#5B5B5B",
+        "color15": "#cecece"
+    }
+}

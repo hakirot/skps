@@ -61,6 +61,8 @@ elif [[ $wall =~ "sara_orange" ]]; then
   wal -a 92 --theme custom-sara_orange
 elif [[ $wall =~ "sara_katana" ]]; then
   wal -a 92 --theme custom-sara_katana
+elif [[ $wall =~ "sara_grayscale" ]]; then
+  wal -a 92 --theme custom-sara_grayscale
 else
   wal -a 92 -i $wall
 fi
