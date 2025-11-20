@@ -5,7 +5,7 @@ set -eou pipefail
 WALLS_DIR=/home/hakirot/pix/wall
 
 # LOAD SAVE
-wall=sara_katana.jpg
+wall=sara_white.png
 
 # Prioritize command-line arg
 if  [[ $# -eq 1 ]]; then
