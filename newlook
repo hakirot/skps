@@ -70,7 +70,7 @@ fi
 # For vanilla dwm
 #xdotool key super+F5
 
-#source /home/hakirot/.config/polybar/bar.sh
+#source $HOME/.config/polybar/bar.sh
 
 killall polybar
 sleep 1;
