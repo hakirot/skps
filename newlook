@@ -69,7 +69,7 @@ fi
 
 if [[ ! -z $(pgrep polybar) ]]; then
   echo "killing polybar"
-  killall polybar
+  killall -9 polybar
   sleep 1;
 fi
 
