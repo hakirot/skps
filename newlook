@@ -2,7 +2,7 @@
 
 set -eou pipefail
 
-WALLS_DIR=/home/hakirot/pix/wall
+WALL_DIR=/home/hakirot/pix/wall
 
 # LOAD SAVE
 #wall=sara_white.png
@@ -12,10 +12,10 @@ if  [[ $# -eq 1 ]]; then
   wall=$1
 # If no save, randomize
 elif [ -z ${wall+x} ]; then
-  wall=$(find ~/pix/wall/ | shuf -n 1)
+  wall=$WALL_DIR/$(ls -1 ~/pix/wall/ | shuf -n 1)
 # Else execute save
 else
-  wall=$WALLS_DIR/$wall
+  wall=$WALL_DIR/$wall
 fi
 
 # Add this as background wallpaper
@@ -67,12 +67,11 @@ else
   wal -a 92 -i $wall
 fi
 
-# For vanilla dwm
-#xdotool key super+F5
+if [[ ! -z $(pgrep polybar) ]]; then
+  echo "killing polybar"
+  killall polybar
+  sleep 1;
+fi
 
-#source $HOME/.config/polybar/bar.sh
-
-killall polybar
-sleep 1;
 MONITOR=eDP-1 polybar center --config=$HOME/.config/polybar/config.ini &
-MONITOR=HDMI-1 polybar secondary-center --config=$HOME/.config/polybar/config.ini &
+#MONITOR=HDMI-1 polybar secondary-center --config=$HOME/.config/polybar/config.ini &
