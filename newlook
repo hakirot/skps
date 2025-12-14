@@ -2,10 +2,10 @@
 
 set -eou pipefail
 
-WALL_DIR=/home/hakirot/pix/wall
-
 # LOAD SAVE
 #wall=sara_white.png
+
+WALL_DIR=/home/hakirot/pix/wall
 
 # Prioritize command-line arg
 if  [[ $# -eq 1 ]]; then
@@ -73,4 +73,4 @@ if [[ ! -z $(pgrep polybar) ]]; then
 fi
 
 MONITOR=eDP-1 polybar center --config=$HOME/.config/polybar/config.ini &
-#MONITOR=HDMI-1 polybar secondary-center --config=$HOME/.config/polybar/config.ini &
+MONITOR=HDMI-1 polybar secondary-center --config=$HOME/.config/polybar/config.ini &
