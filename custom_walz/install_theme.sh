@@ -16,9 +16,9 @@ error() {
 }
 
 print_help () {
-  echo 'Usage:'
-  echo '        ./install_theme.sh [filename]'
-  echo -e "${RED}Installing to $INSTALL_DIR${RESET}"
+  echo -e "\nUsage:"
+  echo '        ./install_theme.sh [colorscheme_file]'
+  echo -e "\n${RED}Installing to $INSTALL_DIR${RESET}\n"
 }
 
 if [ $# -ne 1 ]
