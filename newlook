@@ -50,7 +50,7 @@ elif [[ $wall =~ "road_through_desert" ]]; then
 elif [[ $wall =~ "koi" ]]; then
   wal -a 92 --theme custom-koi
 elif [[ $wall =~ "breathe" ]]; then
-  wal -a 92 --theme custom-breathe
+  wal -a 92 -f $HOME/skps/custom_walz/custom-breathe.json
 elif [[ $wall =~ "orbits" ]]; then
   wal -a 92 --theme custom-orbits
 elif [[ $wall =~ "sara_android" ]]; then
