@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/hakirot/pix/wall/embroidery",
+    "alpha": "92",
+
+    "special": {
+        "background": "#08090C",
+        "foreground": "#dfdad2",
+        "cursor": "#dfdad2"
+    },
+    "colors": {
+        "color0": "#08090C",
+        "color1": "#b29e84",
+        "color2": "#C5BAA8",
+        "color3": "#a1a39f",
+        "color4": "#958876",
+        "color5": "#AFA392",
+        "color6": "#c4bcae",
+        "color7": "#dfdad2",
+        "color8": "#b29e84",
+        "color9": "#797065",
+        "color10": "#85796A",
+        "color11": "#a1a39f",
+        "color12": "#958876",
+        "color13": "#AFA392",
+        "color14": "#85796A",
+        "color15": "#dfdad2"
+    }
+}
