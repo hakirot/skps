@@ -4,6 +4,7 @@ set -eou pipefail
 
 # LOAD SAVE
 #wall=sara_white.png
+wall=graffiti
 
 WALL_DIR=/home/hakirot/pix/wall
 
@@ -44,7 +45,7 @@ elif [[ $wall =~ "kohakunushi" ]]; then
 elif [[ $wall =~ "dystopia" ]]; then
   wal -a 92 --theme custom-dystopia
 elif [[ $wall =~ "graffiti" ]]; then
-  wal -a 92 --theme custom-graffiti
+  wal -a 92 -f $HOME/skps/custom_walz/custom-graffiti.json
 elif [[ $wall =~ "road_through_desert" ]]; then
   wal -a 92 --theme custom-road-through-desert
 elif [[ $wall =~ "koi" ]]; then
@@ -57,8 +58,6 @@ elif [[ $wall =~ "sara_android" ]]; then
   wal -a 92 --theme custom-sara_android
 elif [[ $wall =~ "sara_white" ]]; then
   wal -a 92 --theme custom-sara_white
-elif [[ $wall =~ "sara_orange" ]]; then
-  wal -a 92 --theme custom-sara_orange
 elif [[ $wall =~ "embroidery" ]]; then
   wal -a 92 -f $HOME/skps/custom_walz/custom-embroidery.json
 elif [[ $wall =~ "sara_katana" ]]; then
