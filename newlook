@@ -4,7 +4,7 @@ set -eou pipefail
 
 # LOAD SAVE
 #wall=sara_white.png
-wall=graffiti
+#wall=graffiti
 
 WALL_DIR=/home/hakirot/pix/wall
 
@@ -30,8 +30,6 @@ if [[ $wall =~ "clearing" ]]; then
   wal -a 92 --theme custom-clearing
 elif [[ $wall =~ "city" ]]; then
   wal -a 92 --theme custom-city
-elif [[ $wall =~ "futurepunk" ]]; then
-  wal -a 92 --theme custom-futurepunk
 elif [[ $wall =~ "rocket" ]]; then
   wal -a 92 --theme custom-rocket
 elif [[ $wall =~ "farfaraway" ]]; then

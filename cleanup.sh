@@ -9,3 +9,4 @@ rm -rf $HOME/.cache/vlc/
 rm -f $HOME/.local/share/nvim/telescope_history
 #rm -f $HOME/.host_zsh
 rm -f $HOME/.wget-hsts
+rm -f $HOME/dls/session/rtorrent.input_history
