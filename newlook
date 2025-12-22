@@ -53,15 +53,17 @@ elif [[ $wall =~ "breathe" ]]; then
 elif [[ $wall =~ "orbits" ]]; then
   wal -a 92 --theme custom-orbits
 elif [[ $wall =~ "sara_android" ]]; then
-  wal -a 92 --theme custom-sara_android
+  wal -a 92 -f $HOME/skps/custom_walz/custom-sara_android.json
 elif [[ $wall =~ "sara_white" ]]; then
-  wal -a 92 --theme custom-sara_white
+  wal -a 92 -f $HOME/skps/custom_walz/custom-sara_white.json
 elif [[ $wall =~ "embroidery" ]]; then
   wal -a 92 -f $HOME/skps/custom_walz/custom-embroidery.json
 elif [[ $wall =~ "sara_katana" ]]; then
-  wal -a 92 --theme custom-sara_katana
+  wal -a 92 -f $HOME/skps/custom_walz/custom-sara_katana.json
 elif [[ $wall =~ "sara_grayscale" ]]; then
   wal -a 92 --theme custom-sara_grayscale
+elif [[ $wall =~ "open_skies" ]]; then
+  wal -a 92 -f $HOME/skps/custom_walz/custom-open_skies.json
 else
   wal -a 92 -i $wall
 fi

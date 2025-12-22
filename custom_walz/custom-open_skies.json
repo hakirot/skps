@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/hakirot/pix/open_skies.png",
+    "alpha": "92",
+
+    "special": {
+        "background": "#162127",
+        "foreground": "#d1e8f2",
+        "cursor": "#d1e8f2"
+    },
+    "colors": {
+        "color0": "#2c373d",
+        "color1": "#e3cfd8",
+        "color2": "#b4cfe8",
+        "color3": "#f0ceb5",
+        "color4": "#b1a1a1",
+        "color5": "#B6B1B2",
+        "color6": "#eedad9",
+        "color7": "#f6ece2",
+        "color8": "#92a2a9",
+        "color9": "#e3cfd8",
+        "color10": "#b4cfe8",
+        "color11": "#bcacb9",
+        "color12": "#b1a1a1",
+        "color13": "#B6B1B2",
+        "color14": "#576a79",
+        "color15": "#f6ece2"
+    }
+}
