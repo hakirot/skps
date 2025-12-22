@@ -32,8 +32,6 @@ elif [[ $wall =~ "city" ]]; then
   wal -a 92 --theme custom-city
 elif [[ $wall =~ "rocket" ]]; then
   wal -a 92 --theme custom-rocket
-elif [[ $wall =~ "farfaraway" ]]; then
-  wal -a 92 --theme custom-farfaraway
 elif [[ $wall =~ "alpine3" ]]; then
   wal -a 92 --theme custom-alpine3
 elif [[ $wall =~ "keebz" ]]; then
