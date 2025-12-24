@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/hakirot/pix/.old/akuma",
+    "alpha": "92",
+
+    "special": {
+        "background": "#0a0a0a",
+        "foreground": "#e7e6e6",
+        "cursor": "#e7e6e6"
+    },
+    "colors": {
+        "color0": "#0a0a0a",
+        "color1": "#837475",
+        "color2": "#8D8C8D",
+        "color3": "#A09F9F",
+        "color4": "#ACABAC",
+        "color5": "#C0BFBF",
+        "color6": "#D2D2D2",
+        "color7": "#e7e6e6",
+        "color8": "#a1a1a1",
+        "color9": "#837475",
+        "color10": "#8D8C8D",
+        "color11": "#A09F9F",
+        "color12": "#ACABAC",
+        "color13": "#C0BFBF",
+        "color14": "#544b54",
+        "color15": "#e7e6e6"
+    }
+}

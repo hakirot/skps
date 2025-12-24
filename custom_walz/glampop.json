@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/hakirot/pix/.old/woman",
+    "alpha": "92",
+
+    "special": {
+        "background": "#110d0a",
+        "foreground": "#debda8",
+        "cursor": "#debda8"
+    },
+    "colors": {
+        "color0": "#3d2012",
+        "color1": "#A95A33",
+        "color2": "#CA572E",
+        "color3": "#CE6234",
+        "color4": "#9A6A52",
+        "color5": "#B66E4A",
+        "color6": "#B49774",
+        "color7": "#debda8",
+        "color8": "#9b8475",
+        "color9": "#A95A33",
+        "color10": "#CA572E",
+        "color11": "#CE6234",
+        "color12": "#9A6A52",
+        "color13": "#B66E4A",
+        "color14": "#B49774",
+        "color15": "#debda8"
+    }
+}

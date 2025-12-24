@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+RED='\033[0;31m'
+RESET='\033[0m'
 set -eou pipefail
 
 # LOAD SAVE
@@ -7,13 +9,16 @@ set -eou pipefail
 #wall=graffiti
 
 WALL_DIR=/home/hakirot/pix/wall
+SKPS_DIR=/home/hakirot/skps/custom_walz
 
 # Prioritize command-line arg
 if  [[ $# -eq 1 ]]; then
   wall=$1
+  node_name=$1
 # If no save, randomize
 elif [ -z ${wall+x} ]; then
-  wall=$WALL_DIR/$(ls -1 ~/pix/wall/ | shuf -n 1)
+  node_name=$(ls -1 ~/pix/wall/ | shuf -n 1)
+  wall=$WALL_DIR/$node_name
 # Else execute save
 else
   wall=$WALL_DIR/$wall
@@ -25,46 +30,67 @@ xwallpaper --zoom $wall
 # Clear
 wal -c
 
-# Generate color scheme 
-if [[ $wall =~ "clearing" ]]; then
-  wal -a 92 --theme custom-clearing
-elif [[ $wall =~ "city" ]]; then
-  wal -a 92 --theme custom-city
-elif [[ $wall =~ "rocket" ]]; then
-  wal -a 92 --theme custom-rocket
-elif [[ $wall =~ "alpine3" ]]; then
-  wal -a 92 --theme custom-alpine3
-elif [[ $wall =~ "keebz" ]]; then
-  wal -a 92 --theme custom-keebz
-elif [[ $wall =~ "kohakunushi" ]]; then
-  wal -a 92 --theme custom-kohakunushi
-elif [[ $wall =~ "dystopia" ]]; then
-  wal -a 92 --theme custom-dystopia
-elif [[ $wall =~ "graffiti" ]]; then
-  wal -a 92 -f $HOME/skps/custom_walz/custom-graffiti.json
-elif [[ $wall =~ "road_through_desert" ]]; then
-  wal -a 92 --theme custom-road-through-desert
-elif [[ $wall =~ "koi" ]]; then
-  wal -a 92 --theme custom-koi
-elif [[ $wall =~ "breathe" ]]; then
-  wal -a 92 -f $HOME/skps/custom_walz/custom-breathe.json
-elif [[ $wall =~ "orbits" ]]; then
-  wal -a 92 --theme custom-orbits
-elif [[ $wall =~ "sara_android" ]]; then
-  wal -a 92 -f $HOME/skps/custom_walz/custom-sara_android.json
-elif [[ $wall =~ "sara_white" ]]; then
-  wal -a 92 -f $HOME/skps/custom_walz/custom-sara_white.json
-elif [[ $wall =~ "embroidery" ]]; then
-  wal -a 92 -f $HOME/skps/custom_walz/custom-embroidery.json
-elif [[ $wall =~ "sara_katana" ]]; then
-  wal -a 92 -f $HOME/skps/custom_walz/custom-sara_katana.json
-elif [[ $wall =~ "sara_grayscale" ]]; then
-  wal -a 92 --theme custom-sara_grayscale
-elif [[ $wall =~ "open_skies" ]]; then
-  wal -a 92 -f $HOME/skps/custom_walz/custom-open_skies.json
+echo -e "${RED}WALL: $node_name <-------------------${RESET}"
+echo -e "${RED}$SKPS_DIR/$node_name.json < ---------------${RESET}"
+
+if [[ -f "$SKPS_DIR/$node_name.json" ]]; then
+  echo -e "${RED}FILE REACHED.${RESET}"
+else
+  echo -e "${RED}404 FILE NOT FOUND${RESET}"
+fi
+
+if wal -a 92 -f "$SKPS_DIR/$node_name.json"; then
+  echo -e "${RED}CUSTOM SCHEME APPLIED${RESET}"
 else
   wal -a 92 -i $wall
+  echo -e "${RED}Generated Colorscheme${RESET}"
 fi
+
+## Generate color scheme 
+#if [[ $wall =~ "clearing" ]]; then
+#  wal -a 92 -f $HOME/skps/custom_walz/clearing.json
+#elif [[ $wall =~ "city" ]]; then
+#  wal -a 92 -f $HOME/skps/custom_walz/city.json
+#elif [[ $wall =~ "rocket" ]]; then
+#  wal -a 92 -f $HOME/skps/custom_walz/custom-rocket
+#elif [[ $wall =~ "alpine3" ]]; then
+#  wal -a 92 -f $HOME/skps/custom_walz/alpine3
+#elif [[ $wall =~ "keebz" ]]; then
+#  wal -a 92 -f $HOME/skps/custom_walz/keebz.json
+#elif [[ $wall =~ "kohakunushi" ]]; then
+#  wal -a 92 -f $HOME/skps/custom_walz/kohakunushi.json
+#elif [[ $wall =~ "akuma" ]]; then
+#  wal -a 92 -f $HOME/skps/custom_walz/akuma.json
+#elif [[ $wall =~ "glampop" ]]; then
+#  wal -a 92 -f $HOME/skps/custom_walz/glampop.json
+#elif [[ $wall =~ "dystopia" ]]; then
+#  wal -a 92 -f $HOME/skps/custom_walz/dystopia.json
+#elif [[ $wall =~ "graffiti" ]]; then
+#  wal -a 92 -f $HOME/skps/custom_walz/graffiti.json
+#elif [[ $wall =~ "road_through_desert" ]]; then
+#  wal -a 92 -f $HOME/skps/custom_walz/road-through-desert.json
+#elif [[ $wall =~ "koi" ]]; then
+#  wal -a 92 -f $HOME/skps/custom_walz/koi.json
+#elif [[ $wall =~ "breathe" ]]; then
+#  wal -a 92 -f $HOME/skps/custom_walz/breathe.json
+#elif [[ $wall =~ "orbits" ]]; then
+#  wal -a 92 -f $HOME/skps/custom_walz/orbits
+#elif [[ $wall =~ "sara_android" ]]; then
+#  wal -a 92 -f $HOME/skps/custom_walz/sara_android.json
+#elif [[ $wall =~ "sara_white" ]]; then
+#  wal -a 92 -f $HOME/skps/custom_walz/sara_white.json
+#elif [[ $wall =~ "embroidery" ]]; then
+#  wal -a 92 -f $HOME/skps/custom_walz/embroidery.json
+#elif [[ $wall =~ "sara_katana" ]]; then
+#  wal -a 92 -f $HOME/skps/custom_walz/sara_katana.json
+#elif [[ $wall =~ "sara_grayscale" ]]; then
+#  wal -a 92 -f $HOME/skps/custom_walz/sara_grayscale.json
+#elif [[ $wall =~ "nasa" ]]; then
+#  wal -a 92 -f $HOME/skps/custom_walz/nasa.json
+#elif [[ $wall =~ "open_skies" ]]; then
+#  wal -a 92 -f $HOME/skps/custom_walz/open_skies.json
+#else
+#fi
 
 if [[ ! -z $(pgrep polybar) ]]; then
   killall -9 polybar
