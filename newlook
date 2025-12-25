@@ -30,8 +30,8 @@ xwallpaper --zoom $wall
 # Clear
 wal -c
 
-echo -e "${RED}WALL: $node_name <-------------------${RESET}"
-echo -e "${RED}$SKPS_DIR/$node_name.json < ---------------${RESET}"
+echo -e "-------------------> ${RED}WALL: $node_name${RESET}"
+echo -e "-------------------> ${RED}$SKPS_DIR/$node_name.json${RESET}"
 
 if [[ -f "$SKPS_DIR/$node_name.json" ]]; then
   echo -e "${RED}FILE REACHED.${RESET}"
