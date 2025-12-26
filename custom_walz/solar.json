@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/hakirot/pix/wall/solar",
+    "alpha": "92",
+
+    "special": {
+        "background": "#10111b",
+        "foreground": "#d0d0da",
+        "cursor": "#d0d0da"
+    },
+    "colors": {
+        "color0": "#10111b",
+        "color1": "#7E8195",
+        "color2": "#88889B",
+        "color3": "#9694A7",
+        "color4": "#A59BAD",
+        "color5": "#9EA1B4",
+        "color6": "#A9A5B7",
+        "color7": "#d0d0da",
+        "color8": "#919198",
+        "color9": "#7E8195",
+        "color10": "#88889B",
+        "color11": "#9694A7",
+        "color12": "#A59BAD",
+        "color13": "#9EA1B4",
+        "color14": "#A9A5B7",
+        "color15": "#d0d0da"
+    }
+}

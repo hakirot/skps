@@ -46,52 +46,6 @@ else
   echo -e "${RED}Generated Colorscheme${RESET}"
 fi
 
-## Generate color scheme 
-#if [[ $wall =~ "clearing" ]]; then
-#  wal -a 92 -f $HOME/skps/custom_walz/clearing.json
-#elif [[ $wall =~ "city" ]]; then
-#  wal -a 92 -f $HOME/skps/custom_walz/city.json
-#elif [[ $wall =~ "rocket" ]]; then
-#  wal -a 92 -f $HOME/skps/custom_walz/custom-rocket
-#elif [[ $wall =~ "alpine3" ]]; then
-#  wal -a 92 -f $HOME/skps/custom_walz/alpine3
-#elif [[ $wall =~ "keebz" ]]; then
-#  wal -a 92 -f $HOME/skps/custom_walz/keebz.json
-#elif [[ $wall =~ "kohakunushi" ]]; then
-#  wal -a 92 -f $HOME/skps/custom_walz/kohakunushi.json
-#elif [[ $wall =~ "akuma" ]]; then
-#  wal -a 92 -f $HOME/skps/custom_walz/akuma.json
-#elif [[ $wall =~ "glampop" ]]; then
-#  wal -a 92 -f $HOME/skps/custom_walz/glampop.json
-#elif [[ $wall =~ "dystopia" ]]; then
-#  wal -a 92 -f $HOME/skps/custom_walz/dystopia.json
-#elif [[ $wall =~ "graffiti" ]]; then
-#  wal -a 92 -f $HOME/skps/custom_walz/graffiti.json
-#elif [[ $wall =~ "road_through_desert" ]]; then
-#  wal -a 92 -f $HOME/skps/custom_walz/road-through-desert.json
-#elif [[ $wall =~ "koi" ]]; then
-#  wal -a 92 -f $HOME/skps/custom_walz/koi.json
-#elif [[ $wall =~ "breathe" ]]; then
-#  wal -a 92 -f $HOME/skps/custom_walz/breathe.json
-#elif [[ $wall =~ "orbits" ]]; then
-#  wal -a 92 -f $HOME/skps/custom_walz/orbits
-#elif [[ $wall =~ "sara_android" ]]; then
-#  wal -a 92 -f $HOME/skps/custom_walz/sara_android.json
-#elif [[ $wall =~ "sara_white" ]]; then
-#  wal -a 92 -f $HOME/skps/custom_walz/sara_white.json
-#elif [[ $wall =~ "embroidery" ]]; then
-#  wal -a 92 -f $HOME/skps/custom_walz/embroidery.json
-#elif [[ $wall =~ "sara_katana" ]]; then
-#  wal -a 92 -f $HOME/skps/custom_walz/sara_katana.json
-#elif [[ $wall =~ "sara_grayscale" ]]; then
-#  wal -a 92 -f $HOME/skps/custom_walz/sara_grayscale.json
-#elif [[ $wall =~ "nasa" ]]; then
-#  wal -a 92 -f $HOME/skps/custom_walz/nasa.json
-#elif [[ $wall =~ "open_skies" ]]; then
-#  wal -a 92 -f $HOME/skps/custom_walz/open_skies.json
-#else
-#fi
-
 if [[ ! -z $(pgrep polybar) ]]; then
   killall -9 polybar
   sleep 1;

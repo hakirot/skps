@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/hakirot/pix/wall/MtKtaadnByFredericEdwinChurch",
+    "alpha": "92",
+
+    "special": {
+        "background": "#140e09",
+        "foreground": "#f4bda5",
+        "cursor": "#cdb6b7"
+    },
+    "colors": {
+        "color0": "#140e09",
+        "color1": "#91848c",
+        "color2": "#bc704d",
+        "color3": "#B26C67",
+        "color4": "#8e5923",
+        "color5": "#B18670",
+        "color6": "#E28972",
+        "color7": "#f4bda5",
+        "color8": "#8f7f80",
+        "color9": "#91848c",
+        "color10": "#bc704d",
+        "color11": "#B26C67",
+        "color12": "#8e5923",
+        "color13": "#B18670",
+        "color14": "#492a2a",
+        "color15": "#f4bda5"
+    }
+}
