@@ -4,7 +4,7 @@ RED='\033[0;31m'
 RESET='\033[0m'
 set -eou pipefail
 
-# LOAD SAVE
+# SAVE OPTION
 wall=orbits
 
 WALL_DIR=/home/hakirot/pix/wall

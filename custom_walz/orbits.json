@@ -3,7 +3,7 @@
     "alpha": "92",
 
     "special": {
-        "background": "#0A161A",
+        "background": "#131f23",
         "foreground": "#b4b9bd",
         "cursor": "#b4b9bd"
     },
@@ -12,7 +12,7 @@
         "color1": "#db9c99",
         "color2": "#c6cace",
         "color3": "#CE4647",
-        "color4": "#e24d4d",
+        "color4": "#fb4f4f",
         "color5": "#EF777A",
         "color6": "#A3B3BF",
         "color7": "#989fa5",
