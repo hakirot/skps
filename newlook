@@ -5,8 +5,7 @@ RESET='\033[0m'
 set -eou pipefail
 
 # LOAD SAVE
-#wall=sara_white.png
-#wall=graffiti
+wall=orbits
 
 WALL_DIR=/home/hakirot/pix/wall
 SKPS_DIR=/home/hakirot/skps/custom_walz
@@ -21,6 +20,7 @@ elif [ -z ${wall+x} ]; then
   wall=$WALL_DIR/$node_name
 # Else execute save
 else
+  node_name=$wall
   wall=$WALL_DIR/$wall
 fi
 
