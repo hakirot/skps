@@ -5,9 +5,9 @@ RESET='\033[0m'
 set -eou pipefail
 
 # SAVE OPTION
-wall=orbits
+#wall=orbits
 
-WALL_DIR=/home/hakirot/pix/wall
+WALL_DIR=/home/hakirot/pix/walls
 SKPS_DIR=/home/hakirot/skps/custom_walz
 
 # Prioritize command-line arg
@@ -16,7 +16,7 @@ if  [[ $# -eq 1 ]]; then
   node_name=$1
 # If no save, randomize
 elif [ -z ${wall+x} ]; then
-  node_name=$(ls -1 ~/pix/wall/ | shuf -n 1)
+  node_name=$(ls -1 ~/pix/walls/ | shuf -n 1)
   wall=$WALL_DIR/$node_name
 # Else execute save
 else
