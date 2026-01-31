@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/hakirot/pix/sara/sara_shock",
+    "alpha": "92",
+
+    "special": {
+        "background": "#0E1018",
+        "foreground": "#a6c6e1",
+        "cursor": "#a6c6e1"
+    },
+    "colors": {
+        "color0": "#161926",
+        "color1": "#365574",
+        "color2": "#375794",
+        "color3": "#3A52A3",
+        "color4": "#477395",
+        "color5": "#4769AC",
+        "color6": "#4B83A2",
+        "color7": "#a6c6e1",
+        "color8": "#748a9d",
+        "color9": "#365574",
+        "color10": "#375794",
+        "color11": "#3A52A3",
+        "color12": "#477395",
+        "color13": "#4769AC",
+        "color14": "#4B83A2",
+        "color15": "#a6c6e1"
+    }
+}
