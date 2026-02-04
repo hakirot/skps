@@ -5,11 +5,12 @@ RESET='\033[0m'
 set -eou pipefail
 
 # SAVE OPTION
-#wall=orbits
 
 WALL_DIR=/home/hakirot/pix/sara
 #WALL_DIR=/home/hakirot/pix/walls
-SKPS_DIR=/home/hakirot/skps/custom_walz
+THEMES_DIR=/home/hakirot/skps/custom_walz
+
+#wall=orbits
 
 # Prioritize command-line arg
 if  [[ $# -eq 1 ]]; then
@@ -32,15 +33,15 @@ xwallpaper --zoom $wall
 wal -c
 
 echo -e "-------------------> ${RED}WALL: $node_name${RESET}"
-echo -e "-------------------> ${RED}$SKPS_DIR/$node_name.json${RESET}"
+echo -e "-------------------> ${RED}$THEMES_DIR/$node_name.json${RESET}"
 
-if [[ -f "$SKPS_DIR/$node_name.json" ]]; then
+if [[ -f "$THEMES_DIR/$node_name.json" ]]; then
   echo -e "${RED}FILE REACHED.${RESET}"
 else
   echo -e "${RED}404 FILE NOT FOUND${RESET}"
 fi
 
-if wal -a 92 -f "$SKPS_DIR/$node_name.json"; then
+if wal -a 92 -f "$THEMES_DIR/$node_name.json"; then
   echo -e "${RED}CUSTOM SCHEME APPLIED${RESET}"
 else
   wal -a 92 -i $wall
