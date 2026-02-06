@@ -1,2 +1,0 @@
-#!/bin/sh
-gpg --quiet --batch --decrypt /home/hakirot/skps/.id.gpg
