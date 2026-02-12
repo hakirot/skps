@@ -15,3 +15,5 @@ rm -f $HOME/.wget-hsts
 rm -f $HOME/dls/session/rtorrent.input_history
 rm -rf $HOME/.cache/ueberzugpp
 rm -rf $HOME/.cache/ueberzug
+rm -rf $HOME/deleteme
+sleep 1

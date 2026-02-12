@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/hakirot/pix/sara/sara_lounge",
+    "alpha": "92",
+
+    "special": {
+        "background": "#0c0a0c",
+        "foreground": "#e0ddcb",
+        "cursor": "#e0ddcb"
+    },
+    "colors": {
+        "color0": "#3d383d",
+        "color1": "#add1ca",
+        "color2": "#adafa3",
+        "color3": "#cc7c89",
+        "color4": "#c9bc7c",
+        "color5": "#8ac1db",
+        "color6": "#ce9a80",
+        "color7": "#d4d7b9",
+        "color8": "#484641",
+        "color9": "#445451",
+        "color10": "#adafa3",
+        "color11": "#87525B",
+        "color12": "#877E52",
+        "color13": "#527687",
+        "color14": "#886553",
+        "color15": "#d4d7b9"
+    }
+}
