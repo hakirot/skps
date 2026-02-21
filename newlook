@@ -57,5 +57,6 @@ fi
 MONITOR=eDP-1 polybar center --config=$HOME/.config/polybar/config.ini &
 MONITOR=HDMI-1 polybar secondary-center --config=$HOME/.config/polybar/config.ini &
 MONITOR=Virtual-1 polybar virtual-center --config=$HOME/.config/polybar/config.ini &
+MONITOR=HDMI-A-0 polybar cyberdeck-center --config=$HOME/.config/polybar/config.ini &
 cp /home/hakirot/.cache/wal/colors-wal-dmenu.h /home/hakirot/git/suckless-hakirot/dmenu
 
