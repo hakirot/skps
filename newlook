@@ -33,20 +33,20 @@ xwallpaper --zoom $wall
 # Clear
 wal -c
 
-echo -e "-------------------> ${RED}WALL: $node_name${RESET}"
-echo -e "-------------------> ${RED}$THEMES_DIR/$node_name.json${RESET}"
+echo -e "${RED}newlook: $node_name${RESET}"
+echo -e "${RED}newlook: searching: $node_name.json${RESET}"
 
 if [[ -f "$THEMES_DIR/$node_name.json" ]]; then
-  echo -e "${RED}FILE REACHED.${RESET}"
+  echo -e "${RED}newlook: custom theme file found${RESET}"
 else
-  echo -e "${RED}404 FILE NOT FOUND${RESET}"
+  echo -e "${RED}nelook: custom theme file not found${RESET}"
 fi
 
 if wal -a 92 -f "$THEMES_DIR/$node_name.json"; then
-  echo -e "${RED}CUSTOM SCHEME APPLIED${RESET}"
+  echo -e "${RED}newlook: applied custom theme${RESET}"
 else
   wal -a 92 -i $wall
-  echo -e "${RED}Generated Colorscheme${RESET}"
+  echo -e "${RED}newlook: using wal-generated theme${RESET}"
 fi
 
 if [[ ! -z $(pgrep polybar) ]]; then

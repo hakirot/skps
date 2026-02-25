@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/hakirot/pix/st-jerome-in-his-study-albrecht-durer-1514-2-scaled.jpg",
+    "alpha": "92",
+
+    "special": {
+        "background": "#fef5e4",
+        "foreground": "#050501",
+        "cursor": "#c9c6bf"
+    },
+    "colors": {
+        "color0": "#d8d1c3",
+        "color1": "#353834",
+        "color2": "#353834",
+        "color3": "#353834",
+        "color4": "#353834",
+        "color5": "#353834",
+        "color6": "#353834",
+        "color7": "#353834",
+        "color8": "#353834",
+        "color9": "#353834",
+        "color10": "#353834",
+        "color11": "#353834",
+        "color12": "#353834",
+        "color13": "#353834",
+        "color14": "#353834",
+        "color15": "#353834"
+    }
+}
