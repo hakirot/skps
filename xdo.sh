@@ -33,3 +33,59 @@ if [ "$1" -eq "2" ]; then
   sleep 0.25
   xdotool key f
 fi
+
+if [ "$1" -eq "3" ]; then
+  xdotool key m
+  xdotool key KP_Enter
+  xdotool key alt+minus
+  xdotool key alt+minus
+  xdotool key q
+  xdotool key m
+  xdotool key KP_Enter
+  xdotool key control+j
+  xdotool key E
+  xdotool key q
+  xdotool key m
+  xdotool key KP_Enter
+  xdotool key alt+k
+  xdotool key q
+  xdotool key m
+  xdotool key KP_Enter
+  xdotool key alt+backslash
+  xdotool key alt+backslash
+  xdotool key q
+  xdotool key m
+  xdotool key KP_Enter
+  xdotool key control+j
+  xdotool key E
+  nudges=14
+  xdotool key control+j
+  while [ $nudges -gt 0 ]; do
+    xdotool key alt+Right
+    nudges=$((nudges - 1))
+  done
+  xdotool key alt+h
+  xdotool key alt+h
+  nudges=14
+  xdotool key control+j
+  while [ $nudges -gt 0 ]; do
+    xdotool key alt+Left
+    nudges=$((nudges - 1))
+  done
+  xdotool key alt+k
+  nudges=3
+  xdotool key control+j
+  while [ $nudges -gt 0 ]; do
+    xdotool key alt+Up
+    nudges=$((nudges - 1))
+  done
+  xdotool key alt+k
+  nudges=3
+  xdotool key control+j
+  while [ $nudges -gt 0 ]; do
+    xdotool key alt+Down
+    nudges=$((nudges - 1))
+  done
+  xdotool key alt+k
+  xdotool key alt+l
+fi
