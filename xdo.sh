@@ -79,6 +79,8 @@ if [ "$1" -eq "3" ]; then
     xdotool key alt+Up
     nudges=$((nudges - 1))
   done
+  xdotool key control+j
+  xdotool key control+Up
   xdotool key alt+k
   nudges=3
   xdotool key control+j
@@ -86,6 +88,12 @@ if [ "$1" -eq "3" ]; then
     xdotool key alt+Down
     nudges=$((nudges - 1))
   done
+  xdotool key control+j
+  xdotool key control+Down
   xdotool key alt+k
   xdotool key alt+l
+  xdotool key v
+  sleep 1
+  xdotool key f
+  xdotool key alt+backslash
 fi

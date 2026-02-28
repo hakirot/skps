@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/hakirot/Downloads/0195_electronics-sheet_upscaled.png",
+    "alpha": "92",
+
+    "special": {
+        "background": "#12181d",
+        "foreground": "#83b0bc",
+        "cursor": "#83b0bc"
+    },
+    "colors": {
+        "color0": "#25313e",
+        "color1": "#9C4E5D",
+        "color2": "#9C8C4E",
+        "color3": "#4E9C8C",
+        "color4": "#9C847B",
+        "color5": "#9B654E",
+        "color6": "#9C957B",
+        "color7": "#83b0bc",
+        "color8": "#5b7b83",
+        "color9": "#63313b",
+        "color10": "#544b2a",
+        "color11": "#274c45",
+        "color12": "#564945",
+        "color13": "#593b2e",
+        "color14": "#565346",
+        "color15": "#526d75"
+    }
+}
