@@ -96,4 +96,5 @@ if [ "$1" -eq "3" ]; then
   sleep 1
   xdotool key f
   xdotool key alt+backslash
+  xdotool key alt+h
 fi
