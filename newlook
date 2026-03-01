@@ -5,7 +5,7 @@ RESET='\033[0m'
 set -eou pipefail
 
 # SAVE OPTION
-wall=tiger
+wall=electronix
 
 #WALL_DIR=/home/hakirot/pix/sara
 WALL_DIR=/home/hakirot/pix/walls
