@@ -5,7 +5,7 @@ RESET='\033[0m'
 set -eou pipefail
 
 # SAVE OPTION
-wall=electronix
+#wall=electronix
 
 #WALL_DIR=/home/hakirot/pix/sara
 WALL_DIR=/home/hakirot/pix/walls
@@ -49,14 +49,6 @@ else
   echo -e "${RED}newlook: using wal-generated theme${RESET}"
 fi
 
-if [[ ! -z $(pgrep polybar) ]]; then
-  killall -9 polybar
-  sleep 1;
-fi
-
-MONITOR=eDP-1 polybar center --config=$HOME/.config/polybar/config.ini &
-MONITOR=HDMI-1 polybar secondary-center --config=$HOME/.config/polybar/config.ini &
-MONITOR=Virtual-1 polybar virtual-center --config=$HOME/.config/polybar/config.ini &
-MONITOR=HDMI-A-0 polybar cyberdeck-center --config=$HOME/.config/polybar/config.ini &
+/home/hakirot/.config/polybar/bar.sh &
 cp /home/hakirot/.cache/wal/colors-wal-dmenu.h /home/hakirot/git/suckless-hakirot/dmenu
 

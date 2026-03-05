@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/hakirot/Downloads/996764.jpg",
+    "alpha": "92",
+
+    "special": {
+        "background": "#0a0101",
+        "foreground": "#d5cce3",
+        "cursor": "#d5cce3"
+    },
+    "colors": {
+        "color0": "#26181f",
+        "color1": "#6057A2",
+        "color2": "#616BD9",
+        "color3": "#BB57B4",
+        "color4": "#9B6BD3",
+        "color5": "#67B1BD",
+        "color6": "#6899E4",
+        "color7": "#d5cce3",
+        "color8": "#958e9e",
+        "color9": "#6057A2",
+        "color10": "#616BD9",
+        "color11": "#BB57B4",
+        "color12": "#9B6BD3",
+        "color13": "#67B1BD",
+        "color14": "#6899E4",
+        "color15": "#d5cce3"
+    }
+}
