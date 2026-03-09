@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+sleep .25
+xdotool key super+space
+sleep .5
+xdotool key M
+xdotool key KP_Enter
+xdotool key KP_Enter
+
+xdotool key control+j
+xdotool key c
+
+sleep .25
+xdotool key q
+xdotool type "startproxy"
+xdotool key KP_Enter
+sleep .5
+xdotool type "asdf"
+xdotool key KP_Enter
+
+xdotool key control+j
+xdotool key c
+
+xdotool key R

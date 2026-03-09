@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/hakirot/pix/alex_steven_martin/echosphere.jpeg",
+    "alpha": "92",
+
+    "special": {
+        "background": "#020506",
+        "foreground": "#cdd2e6",
+        "cursor": "#cdd2e6"
+    },
+    "colors": {
+        "color0": "#320054",
+        "color1": "#7d68a3",
+        "color2": "#038D37",
+        "color3": "#019066",
+        "color4": "#5961d1",
+        "color5": "#9F688F",
+        "color6": "#0DACAD",
+        "color7": "#afbee9",
+        "color8": "#6000a0",
+        "color9": "#51426B",
+        "color10": "#015421",
+        "color11": "#00593e",
+        "color12": "#41489F",
+        "color13": "#724a67",
+        "color14": "#076363",
+        "color15": "#8f96ca"
+    }
+}

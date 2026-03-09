@@ -1,0 +1,45 @@
+#!/usr/bin/env bash
+set -eou pipefail
+
+choice=$(echo -e "Screens\nAudio" | dmenu -p "Screens or Audio" -l 10)
+
+if [ "$choice" = "Screens" ]; then
+  choice=$(echo -e "Brightness\nOutputs\nTiny Mode\nNormal Mode" | dmenu -p "Select Option" -l 10)
+  if [ "$choice" = "Brightness" ]; then
+    choice=$(echo -e "Default\nB1\nB2\nB3\nB4\nDungeon" | dmenu -p "Select Level" -l 10)
+    if [ "$choice" = "Default" ]; then
+      xrandr --output HDMI-A-0 --brightness 1
+    elif [ "$choice" = "B1" ]; then
+      xrandr --output HDMI-A-0 --brightness .8
+    elif [ "$choice" = "B2" ]; then
+      xrandr --output HDMI-A-0 --brightness .6
+    elif [ "$choice" = "B3" ]; then
+      xrandr --output HDMI-A-0 --brightness .4
+    elif [ "$choice" = "B4" ]; then
+      xrandr --output HDMI-A-0 --brightness .25
+    elif [ "$choice" = "Dungeon" ]; then
+      xrandr --output HDMI-A-0 --brightness .1
+    fi
+  elif [ "$choice" = "Outputs" ]; then
+    choice=$(echo -e "DisplayPort Right\nDisplayPort Left\nHDMI off\nHDMI on" | dmenu -p "Select Option" -l 10)
+    if [ "$choice" = "DisplayPort Right" ]; then
+      xrandr --output DisplayPort-1 --right-of HDMI-A-0
+    elif [ "$choice" = "DisplayPort Left" ]; then
+      xrandr --output DisplayPort-1 --left-of HDMI-A-0
+    elif [ "$choice" = "HDMI off" ]; then
+      xrandr --output HDMI-A-0 --off
+    elif [ "$choice" = "HDMI on" ]; then
+      xrandr --output HDMI-A-0 --on
+    fi
+  elif [ "$choice" = "Tiny Mode" ]; then
+    xrandr --output HDMI-A-0 --mode 640x480
+    cp /home/hakirot/.config/polybar/tiny_mode.ini /home/hakirot/.config/polybar/config.ini
+    source /home/hakirot/.config/polybar/bar.sh
+  elif [ "$choice" = "Normal Mode" ]; then
+    xrandr --output HDMI-A-0 --mode 2560x1600
+    cp /home/hakirot/.config/polybar/normal_mode.ini /home/hakirot/.config/polybar/config.ini
+    source /home/hakirot/.config/polybar/bar.sh
+  fi
+elif [ "$choice" = "Audio" ]; then
+  echo "hi"
+fi
