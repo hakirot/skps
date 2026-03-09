@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 set -eou pipefail
 
-choice=$(echo -e "Screens\nAudio" | dmenu -p "Select" -l 10)
+choice=$(echo -e "Screens\nAudio" | dmenu)
 
 if [ "$choice" = "Screens" ]; then
-  choice=$(echo -e "Brightness\nOutputs\nTiny Mode\nNormal Mode" | dmenu -p "Choose" -l 10)
+  choice=$(echo -e "Brightness\nOutputs\nTiny Mode\nNormal Mode" | dmenu)
   if [ "$choice" = "Brightness" ]; then
-    choice=$(echo -e "Default\nB1\nB2\nB3\nB4\nDungeon" | dmenu -p "Set Level" -l 10)
+    choice=$(echo -e "Default\nB1\nB2\nB3\nB4\nDungeon" | dmenu)
     if [ "$choice" = "Default" ]; then
       xrandr --output HDMI-A-0 --brightness 1
     elif [ "$choice" = "B1" ]; then
@@ -21,7 +21,7 @@ if [ "$choice" = "Screens" ]; then
       xrandr --output HDMI-A-0 --brightness .1
     fi
   elif [ "$choice" = "Outputs" ]; then
-    choice=$(echo -e "DisplayPort Right\nDisplayPort Left\nHDMI off\nHDMI on" | dmenu -p "Choose" -l 10)
+    choice=$(echo -e "DisplayPort Right\nDisplayPort Left\nHDMI off\nHDMI on" | dmenu)
     if [ "$choice" = "DisplayPort Right" ]; then
       xrandr --output DisplayPort-1 --right-of HDMI-A-0
     elif [ "$choice" = "DisplayPort Left" ]; then
