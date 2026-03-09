@@ -22,3 +22,12 @@ xdotool key control+j
 xdotool key c
 
 xdotool key R
+
+sleep .25
+xdotool key alt+1
+sleep .25
+xdotool key 2
+sleep .25
+xdotool key l
+sleep .25
+xdotool key l
