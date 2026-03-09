@@ -1,20 +1,18 @@
 #!/usr/bin/env bash
 
-if  [[ $# -eq 0 ]]; then
-  # Get list of WiFi networks
-  networks=$(nmcli -t -f SSID dev wifi list | sort -u)
+# Get list of WiFi networks
+networks=$(nmcli -t -f SSID dev wifi list | sort -u)
 
-  selected=$(echo "$networks" | dmenu)
+selected=$(echo "$networks" | dmenu)
 
-  # Connect to selected network
-  if [ -n "$selected" ]; then
-    # open this in a terminal for the prompt
-    nmcli device wifi connect "$selected"
-  fi
-elif  [[ $# -eq 1 ]]; then
+# Connect to selected network
+if [ -n "$selected" ]; then
   xdotool key super+e
   xdotool key super+space
-  xdotool key q
+  xdotool key Q
+  sleep .1
+  xdotool key control+l
   sleep .2
-  xdotool type "nmcli device wifi connect ${1} --ask"
+  xdotool type "nmcli device wifi connect ${selected} --ask"
+  xdotool key KP_Enter
 fi
