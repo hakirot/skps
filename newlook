@@ -11,6 +11,7 @@ wall=cyberpunk
 #WALL_DIR=/home/hakirot/pix/walls
 WALL_DIR=/home/hakirot/pix/walls/alex_steven_martin
 #WALL_DIR=/home/hakirot/pix/alex_steven_martin
+
 THEMES_DIR=/home/hakirot/skps/custom_walz
 
 random_flag=0
@@ -58,6 +59,8 @@ else
   echo -e "${RED}newlook: using wal-generated theme${RESET}"
 fi
 
-/home/hakirot/.config/polybar/bar.sh &
+nohup bash -c "/home/hakirot/.config/polybar/bar.sh" &
 cp /home/hakirot/.cache/wal/colors-wal-dmenu.h /home/hakirot/git/suckless-hakirot/dmenu
-
+cd /home/hakirot/git/suckless-hakirot/dmenu
+make
+make clean

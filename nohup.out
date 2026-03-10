@@ -1,0 +1,87 @@
+polybar|notice:  Parsing config file: /home/hakirot/.config/polybar/config.ini
+polybar|notice:  Parsing config file: /home/hakirot/.config/polybar/config.ini
+polybar|notice:  Listening for IPC messages (PID: 87763)
+polybar|notice:  Listening for IPC messages (PID: 87764)
+polybar|error: Uncaught exception, shutting down: Monitor "DisplayPort-1" not found or disconnected
+polybar|notice:  Loading module 'dwm' of type 'internal/dwm'
+polybar|notice:  Loading module 'date' of type 'internal/date'
+polybar|notice:  Loading module 'cpu' of type 'internal/cpu'
+polybar|notice:  Loading module 'memory' of type 'internal/memory'
+polybar|notice:  Loading module 'network-deck' of type 'internal/network'
+polybar|notice:  Loading module 'eth-deck' of type 'internal/network'
+polybar|notice:  Loading module 'pulseaudio' of type 'internal/pulseaudio'
+polybar|notice:  pulseaudio: using default sink bluez_output.AC:80:0A:19:89:A8
+polybar|notice:  Loaded 7 modules
+polybar|notice:  Loaded font "JetBrainsMonoNL Nerd Font:size=16" (name=JetBrainsMonoNL Nerd Font, offset=1, file=/usr/share/fonts/TTF/JetBrainsMonoNLNerdFont-Regular.ttf)
+polybar|notice:  Received signal(10): User defined signal 1
+polybar|notice:  Termination signal received, shutting down...
+polybar|notice:  Parsing config file: /home/hakirot/.config/polybar/config.ini
+polybar|notice:  Parsing config file: /home/hakirot/.config/polybar/config.ini
+polybar|notice:  Listening for IPC messages (PID: 89459)
+polybar|notice:  Listening for IPC messages (PID: 89458)
+polybar|error: Uncaught exception, shutting down: Monitor "DisplayPort-1" not found or disconnected
+polybar|notice:  Loading module 'dwm' of type 'internal/dwm'
+polybar|notice:  Loading module 'date' of type 'internal/date'
+polybar|notice:  Loading module 'cpu' of type 'internal/cpu'
+polybar|notice:  Loading module 'memory' of type 'internal/memory'
+polybar|notice:  Loading module 'network-deck' of type 'internal/network'
+polybar|notice:  Loading module 'eth-deck' of type 'internal/network'
+polybar|notice:  Loading module 'pulseaudio' of type 'internal/pulseaudio'
+polybar|notice:  pulseaudio: using default sink bluez_output.AC:80:0A:19:89:A8
+polybar|notice:  Loaded 7 modules
+polybar|notice:  Loaded font "JetBrainsMonoNL Nerd Font:size=16" (name=JetBrainsMonoNL Nerd Font, offset=1, file=/usr/share/fonts/TTF/JetBrainsMonoNLNerdFont-Regular.ttf)
+polybar|notice:  Received signal(10): User defined signal 1
+polybar|notice:  Termination signal received, shutting down...
+polybar|notice:  Parsing config file: /home/hakirot/.config/polybar/config.ini
+polybar|notice:  Listening for IPC messages (PID: 89458)
+polybar|notice:  Parsing config file: /home/hakirot/.config/polybar/config.ini
+polybar|notice:  Parsing config file: /home/hakirot/.config/polybar/config.ini
+polybar|notice:  Listening for IPC messages (PID: 106569)
+polybar|notice:  Listening for IPC messages (PID: 106568)
+polybar|error: Uncaught exception, shutting down: Monitor "DisplayPort-1" not found or disconnected
+polybar|notice:  Loading module 'dwm' of type 'internal/dwm'
+polybar|notice:  Loading module 'date' of type 'internal/date'
+polybar|notice:  Loading module 'cpu' of type 'internal/cpu'
+polybar|notice:  Loading module 'memory' of type 'internal/memory'
+polybar|notice:  Loading module 'network-deck' of type 'internal/network'
+polybar|notice:  Loading module 'eth-deck' of type 'internal/network'
+polybar|notice:  Loading module 'pulseaudio' of type 'internal/pulseaudio'
+polybar|notice:  pulseaudio: using default sink bluez_output.AC:80:0A:19:89:A8
+polybar|notice:  Loaded 7 modules
+polybar|notice:  Loaded font "JetBrainsMonoNL Nerd Font:size=16" (name=JetBrainsMonoNL Nerd Font, offset=1, file=/usr/share/fonts/TTF/JetBrainsMonoNLNerdFont-Regular.ttf)
+polybar|notice:  Received signal(10): User defined signal 1
+polybar|notice:  Termination signal received, shutting down...
+polybar|notice:  Parsing config file: /home/hakirot/.config/polybar/config.ini
+polybar|notice:  Listening for IPC messages (PID: 110617)
+polybar|notice:  Parsing config file: /home/hakirot/.config/polybar/config.ini
+polybar|error: Uncaught exception, shutting down: Monitor "DisplayPort-1" not found or disconnected
+polybar|notice:  Listening for IPC messages (PID: 110616)
+polybar|notice:  Loading module 'dwm' of type 'internal/dwm'
+polybar|notice:  Loading module 'date' of type 'internal/date'
+polybar|notice:  Loading module 'cpu' of type 'internal/cpu'
+polybar|notice:  Loading module 'memory' of type 'internal/memory'
+polybar|notice:  Loading module 'network-deck' of type 'internal/network'
+polybar|notice:  Loading module 'eth-deck' of type 'internal/network'
+polybar|notice:  Loading module 'pulseaudio' of type 'internal/pulseaudio'
+polybar|notice:  pulseaudio: using default sink bluez_output.AC:80:0A:19:89:A8
+polybar|notice:  Loaded 7 modules
+polybar|notice:  Loaded font "JetBrainsMonoNL Nerd Font:size=16" (name=JetBrainsMonoNL Nerd Font, offset=1, file=/usr/share/fonts/TTF/JetBrainsMonoNLNerdFont-Regular.ttf)
+polybar|notice:  Received signal(10): User defined signal 1
+polybar|notice:  Termination signal received, shutting down...
+polybar|notice:  Parsing config file: /home/hakirot/.config/polybar/config.ini
+polybar|notice:  Parsing config file: /home/hakirot/.config/polybar/config.ini
+polybar|notice:  Listening for IPC messages (PID: 119522)
+polybar|notice:  Listening for IPC messages (PID: 119521)
+polybar|error: Uncaught exception, shutting down: Monitor "DisplayPort-1" not found or disconnected
+polybar|notice:  Loading module 'dwm' of type 'internal/dwm'
+polybar|notice:  Loading module 'date' of type 'internal/date'
+polybar|notice:  Loading module 'cpu' of type 'internal/cpu'
+polybar|notice:  Loading module 'memory' of type 'internal/memory'
+polybar|notice:  Loading module 'network-deck' of type 'internal/network'
+polybar|notice:  Loading module 'eth-deck' of type 'internal/network'
+polybar|notice:  Loading module 'pulseaudio' of type 'internal/pulseaudio'
+polybar|notice:  pulseaudio: using default sink bluez_output.AC:80:0A:19:89:A8
+polybar|notice:  Loaded 7 modules
+polybar|notice:  Loaded font "JetBrainsMonoNL Nerd Font:size=16" (name=JetBrainsMonoNL Nerd Font, offset=1, file=/usr/share/fonts/TTF/JetBrainsMonoNLNerdFont-Regular.ttf)
+polybar|notice:  Received signal(10): User defined signal 1
+polybar|notice:  Termination signal received, shutting down...

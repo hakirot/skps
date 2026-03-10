@@ -31,3 +31,11 @@ sleep .25
 xdotool key l
 sleep .25
 xdotool key l
+sleep .25
+xdotool key 1
+xdotool key alt+z
+xdotool key alt+z
+xdotool key alt+z
+xdotool key alt+z
+xdotool key alt+z
+xdotool key alt+z
