@@ -9,17 +9,25 @@ wall=cyberpunk
 
 #WALL_DIR=/home/hakirot/pix/sara
 #WALL_DIR=/home/hakirot/pix/walls
-WALL_DIR=/home/hakirot/pix/alex_steven_martin
+WALL_DIR=/home/hakirot/pix/walls/alex_steven_martin
+#WALL_DIR=/home/hakirot/pix/alex_steven_martin
 THEMES_DIR=/home/hakirot/skps/custom_walz
 
-#wall=orbits
+random_flag=0
+if [[ $# -eq 1 && $1 == "-r" ]]; then
+  random_flag=1
+else
+  random_flag=0
+fi
 
 # Prioritize command-line arg
-if  [[ $# -eq 1 ]]; then
+#if  [[ $# -eq 1 ]]; then
+if  [[ $# -eq 1 && $1 != "-r" ]]; then
   wall=$1
   node_name=$1
 # If no save, randomize
-elif [ -z ${wall+x} ]; then
+#elif [ -z ${wall+x} ]; then
+elif [ -z ${wall+x} ] || [ "$random_flag" -eq 1 ]; then
   node_name=$(ls -1 $WALL_DIR | shuf -n 1)
   wall=$WALL_DIR/$node_name
 # Else execute save
