@@ -33,9 +33,6 @@ sleep .25
 xdotool key l
 sleep .25
 xdotool key 1
-xdotool key alt+z
-xdotool key alt+z
-xdotool key alt+z
-xdotool key alt+z
-xdotool key alt+z
-xdotool key alt+z
+for i in {1..6}; do
+  xdotool key alt+z
+done

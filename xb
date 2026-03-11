@@ -6,7 +6,7 @@ choice=$(echo -e "Screens\nAudio" | dmenu)
 if [ "$choice" = "Screens" ]; then
   choice=$(echo -e "Brightness\nOutputs\nTiny Mode\nNormal Mode" | dmenu)
   if [ "$choice" = "Brightness" ]; then
-    choice=$(echo -e "Default\nB1\nB2\nB3\nB4\nDungeon" | dmenu)
+    choice=$(echo -e "Default\nB1\nB2\nB3\nB4\nB5\nDungeon" | dmenu)
     if [ "$choice" = "Default" ]; then
       xrandr --output HDMI-A-0 --brightness 1
     elif [ "$choice" = "B1" ]; then
@@ -17,8 +17,10 @@ if [ "$choice" = "Screens" ]; then
       xrandr --output HDMI-A-0 --brightness .4
     elif [ "$choice" = "B4" ]; then
       xrandr --output HDMI-A-0 --brightness .25
+    elif [ "$choice" = "B5" ]; then
+      xrandr --output HDMI-A-0 --brightness .2
     elif [ "$choice" = "Dungeon" ]; then
-      xrandr --output HDMI-A-0 --brightness .1
+      xrandr --output HDMI-A-0 --brightness .12
     fi
   elif [ "$choice" = "Outputs" ]; then
     choice=$(echo -e "DisplayPort Right\nDisplayPort Left\nHDMI Off\nHDMI On\nRotate Right\nRotate Left\nInvert\nRotate Reset" | dmenu)
