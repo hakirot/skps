@@ -23,11 +23,15 @@ if [ "$choice" = "Screens" ]; then
       xrandr --output HDMI-A-0 --brightness .12
     fi
   elif [ "$choice" = "Outputs" ]; then
-    choice=$(echo -e "DisplayPort Right\nDisplayPort Left\nHDMI Off\nHDMI On\nRotate Right\nRotate Left\nInvert\nRotate Reset" | dmenu)
+    choice=$(echo -e "DisplayPort Right\nDisplayPort Left\nDisplayPort On\nDisplayPort Off\nHDMI Off\nHDMI On\nRotate Right\nRotate Left\nInvert\nRotate Reset" | dmenu)
     if [ "$choice" = "DisplayPort Right" ]; then
       xrandr --output DisplayPort-1 --right-of HDMI-A-0
     elif [ "$choice" = "DisplayPort Left" ]; then
       xrandr --output DisplayPort-1 --left-of HDMI-A-0
+    elif [ "$choice" = "DisplayPort On" ]; then
+      xrandr --output DisplayPort-1 --on
+    elif [ "$choice" = "DisplayPort Off" ]; then
+      xrandr --output DisplayPort-1 --off
     elif [ "$choice" = "HDMI off" ]; then
       xrandr --output HDMI-A-0 --off
     elif [ "$choice" = "HDMI on" ]; then
