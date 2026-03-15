@@ -23,7 +23,7 @@ if [ "$choice" = "Screens" ]; then
       xrandr --output HDMI-A-0 --brightness .12
     fi
   elif [ "$choice" = "Outputs" ]; then
-    choice=$(echo -e "DisplayPort Right\nDisplayPort Left\nDisplayPort On\nDisplayPort Off\nHDMI Off\nHDMI On\nRotate Right\nRotate Left\nInvert\nRotate Reset" | dmenu)
+    choice=$(echo -e "DisplayPort Right\nDisplayPort Left\nDisplayPort On\nDisplayPort Off\nHDMI Off\nHDMI On\nRotate Right\nRotate Left\nInvert HDMI\nInvert DisplayPort\nRotate Reset HDMI\nRotate Reset DisplayPort" | dmenu)
     if [ "$choice" = "DisplayPort Right" ]; then
       xrandr --output DisplayPort-1 --right-of HDMI-A-0
     elif [ "$choice" = "DisplayPort Left" ]; then
@@ -40,10 +40,14 @@ if [ "$choice" = "Screens" ]; then
       xrandr --output HDMI-A-0 --rotate right
     elif [ "$choice" = "Rotate Left" ]; then
       xrandr --output HDMI-A-0 --rotate left
-    elif [ "$choice" = "Invert" ]; then
+    elif [ "$choice" = "Invert HDMI" ]; then
       xrandr --output HDMI-A-0 --rotate inverted
-    elif [ "$choice" = "Rotate Reset" ]; then
+    elif [ "$choice" = "Invert DisplayPort" ]; then
+      xrandr --output DisplayPort-1 --rotate inverted
+    elif [ "$choice" = "Rotate Reset HDMI" ]; then
       xrandr --output HDMI-A-0 --rotate normal
+    elif [ "$choice" = "Rotate Reset DisplayPort" ]; then
+      xrandr --output DisplayPort-1 --rotate normal
     fi
   elif [ "$choice" = "Tiny Mode" ]; then
     xrandr --output HDMI-A-0 --mode 640x480
