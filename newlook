@@ -1,16 +1,16 @@
 #!/usr/bin/env bash
-
-RED='\033[0;31m'
-RESET='\033[0m'
 set -eou pipefail
 
 # SAVE OPTION
 #wall=cyberpunk
 
-#WALL_DIR=/home/hakirot/pix/sara
-#WALL_DIR=/home/hakirot/pix/walls
+#WALL_DIR=/home/hakirot/pix/walls/sara
+#WALL_DIR=/home/hakirot/pix/walls/walls
 WALL_DIR=/home/hakirot/pix/walls/alex_steven_martin
-#WALL_DIR=/home/hakirot/pix/alex_steven_martin
+
+
+RED='\033[0;31m'
+RESET='\033[0m'
 
 THEMES_DIR=/home/hakirot/skps/custom_walz
 

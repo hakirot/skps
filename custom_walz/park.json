@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/hakirot/pix/walls/alex_steven_martin/park",
+    "alpha": "92",
+
+    "special": {
+        "background": "#000000",
+        "foreground": "#9cdddc",
+        "cursor": "#9cdddc"
+    },
+    "colors": {
+        "color0": "#26363a",
+        "color1": "#578C75",
+        "color2": "#3957B3",
+        "color3": "#A9768B",
+        "color4": "#049188",
+        "color5": "#1B9F97",
+        "color6": "#49FDAF",
+        "color7": "#9cdddc",
+        "color8": "#6d9a9a",
+        "color9": "#578C75",
+        "color10": "#3957B3",
+        "color11": "#A9768B",
+        "color12": "#049188",
+        "color13": "#1B9F97",
+        "color14": "#237a54",
+        "color15": "#9cdddc"
+    }
+}
