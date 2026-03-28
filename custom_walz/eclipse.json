@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/hakirot/pix/walls/walls/eclipse",
+    "alpha": "92",
+
+    "special": {
+        "background": "#111111",
+        "foreground": "#eeeeee",
+        "cursor": "#eeeeee"
+    },
+    "colors": {
+        "color0": "#111111",
+        "color1": "#eda09a",
+        "color2": "#b9d1ac",
+        "color3": "#F0E59D",
+        "color4": "#9ca7f0",
+        "color5": "#ed9abe",
+        "color6": "#9ae8ed",
+        "color7": "#eeeeee",
+        "color8": "#a6a6a6",
+        "color9": "#8A8A8A",
+        "color10": "#A5A5A5",
+        "color11": "#F0E59D",
+        "color12": "#D2D2D2",
+        "color13": "#E4E4E4",
+        "color14": "#EAEAEA",
+        "color15": "#eeeeee"
+    }
+}
