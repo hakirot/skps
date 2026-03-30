@@ -36,3 +36,7 @@ xdotool key 1
 for i in {1..6}; do
   xdotool key alt+z
 done
+
+xdotool key control+j
+xdotool key c
+xdotool key t
