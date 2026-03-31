@@ -29,7 +29,7 @@ if [ "$choice" = "Screens" ]; then
     elif [ "$choice" = "DisplayPort Left" ]; then
       xrandr --output DisplayPort-1 --left-of HDMI-A-0
     elif [ "$choice" = "DisplayPort On" ]; then
-      xrandr --output DisplayPort-1 --on
+      xrandr --output DisplayPort-1 --mode 2560x1440
     elif [ "$choice" = "DisplayPort Off" ]; then
       xrandr --output DisplayPort-1 --off
     elif [ "$choice" = "HDMI off" ]; then
