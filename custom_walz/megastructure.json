@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/hakirot/pix/megastructure.jpg",
+    "alpha": "92",
+
+    "special": {
+        "background": "#0a0a0c",
+        "foreground": "#c0c1ca",
+        "cursor": "#c0c1ca"
+    },
+    "colors": {
+        "color0": "#1e1e30",
+        "color1": "#e3cfd8",
+        "color2": "#e2c5b1",
+        "color3": "#c2d6e8",
+        "color4": "#c4938b",
+        "color5": "#c6c6c6",
+        "color6": "#e2cfce",
+        "color7": "#f6ece2",
+        "color8": "#92a2a9",
+        "color9": "#b5a8ae",
+        "color10": "#bcacb9",
+        "color11": "#879caf",
+        "color12": "#fc9e8d",
+        "color13": "#c6c6c6",
+        "color14": "#576a79",
+        "color15": "#d3cbc2"
+    }
+}

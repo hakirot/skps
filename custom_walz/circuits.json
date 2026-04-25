@@ -8,14 +8,14 @@
         "cursor": "#cfdadd"
     },
     "colors": {
-        "color0": "#0C0D0D",
+        "color0": "#1e2121",
         "color1": "#d88754",
         "color2": "#e2cc7a",
         "color3": "#db6b78",
         "color4": "#57a6db",
         "color5": "#95b9c9",
         "color6": "#959fc9",
-        "color7": "#c5c9d6",
+        "color7": "#afb3bf",
         "color8": "#90989a",
         "color9": "#A26138",
         "color10": "#AA974F",
@@ -23,6 +23,6 @@
         "color12": "#326B90",
         "color13": "#7097A8",
         "color14": "#63262d",
-        "color15": "#c5c9d6"
+        "color15": "#afb3bf"
     }
 }

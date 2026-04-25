@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/hakirot/pix/cybercity.jpg",
+    "alpha": "92",
+
+    "special": {
+        "background": "#0b080f",
+        "foreground": "#eac7be",
+        "cursor": "#eac7be"
+    },
+    "colors": {
+        "color0": "#130e19",
+        "color1": "#db4371",
+        "color2": "#e58098",
+        "color3": "#e83a57",
+        "color4": "#DF5A64",
+        "color5": "#E98C78",
+        "color6": "#efc1ba",
+        "color7": "#eac7be",
+        "color8": "#392a4c",
+        "color9": "#A03052",
+        "color10": "#9F5868",
+        "color11": "#af2a40",
+        "color12": "#9b3c44",
+        "color13": "#c67a69",
+        "color14": "#A03052",
+        "color15": "#eac7be"
+    }
+}
