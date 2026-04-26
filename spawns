@@ -28,20 +28,10 @@ xdotool key alt+1
 sleep .25
 xdotool key 2
 sleep .25
-xdotool key l
+xdotool key j
 sleep .25
-xdotool key l
-sleep .25
-xdotool key 1
-for i in {1..6}; do
+xdotool key j
+
+for i in {1..4}; do
   xdotool key alt+z
 done
-
-xdotool key control+j
-xdotool key c
-xdotool key t
-xdotool key alt+minus
-sleep .25
-xdotool key b
-xdotool key KP_Enter
-xdotool key KP_Enter
