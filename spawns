@@ -32,6 +32,6 @@ xdotool key j
 sleep .25
 xdotool key j
 
-for i in {1..4}; do
+for i in {1..2}; do
   xdotool key alt+z
 done
