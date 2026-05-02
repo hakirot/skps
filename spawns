@@ -14,7 +14,7 @@ sleep .25
 xdotool key q
 xdotool type "startproxy"
 xdotool key KP_Enter
-sleep .5
+sleep 1
 xdotool type "asdf"
 xdotool key KP_Enter
 
