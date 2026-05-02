@@ -2,10 +2,10 @@
 set -eou pipefail
 
 # SAVE OPTION
-#wall=cyberpunk
+wall=astronaut
 
-#WALL_DIR=/home/hakirot/pix/walls/sara
-WALL_DIR=/home/hakirot/pix/walls/walls
+WALL_DIR=/home/hakirot/pix/walls/sara
+#WALL_DIR=/home/hakirot/pix/walls/walls
 #WALL_DIR=/home/hakirot/pix/walls/alex_steven_martin
 
 
@@ -17,8 +17,6 @@ THEMES_DIR=/home/hakirot/skps/custom_walz
 random_flag=0
 if [[ $# -eq 1 && $1 == "-r" ]]; then
   random_flag=1
-else
-  random_flag=0
 fi
 
 # Prioritize command-line arg
