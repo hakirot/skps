@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/hakirot/pix/screenshots/05-04-2026-225050.png",
+    "alpha": "92",
+
+    "special": {
+        "background": "#0b0a08",
+        "foreground": "#f3f1d0",
+        "cursor": "#f3f1d0"
+    },
+    "colors": {
+        "color0": "#0b0a08",
+        "color1": "#c66c55",
+        "color2": "#acc1a6",
+        "color3": "#9BA16D",
+        "color4": "#CAAD5C",
+        "color5": "#9DB084",
+        "color6": "#EBE193",
+        "color7": "#f3f1d0",
+        "color8": "#aaa891",
+        "color9": "#c66c55",
+        "color10": "#acc1a6",
+        "color11": "#676b48",
+        "color12": "#CAAD5C",
+        "color13": "#9DB084",
+        "color14": "#7a754e",
+        "color15": "#f3f1d0"
+    }
+}

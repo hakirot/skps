@@ -32,6 +32,11 @@ xdotool key j
 sleep .25
 xdotool key j
 
+# blink
+xdotool key alt+x
+xdotool key alt+x
+xdotool key alt+z
+xdotool key alt+z
 xdotool key alt+x
 xdotool key alt+x
 xdotool key alt+z
