@@ -8,7 +8,12 @@ source /home/hakirot/skps/spawns
 xdotool key super+2
 xdotool key super+w
 xdotool key super+BackSpace
+sleep 1
 xdotool type "firefox"
+sleep .25
 xdotool key KP_Enter
-sleep 3
+sleep 2
 xdotool key KP_Enter
+sleep 1
+xdotool key super+1
+sleep .5
