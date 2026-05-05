@@ -2,7 +2,7 @@
 set -eou pipefail
 
 # SAVE OPTION
-wall=astronaut
+wall=netrunner
 
 WALL_DIR=/home/hakirot/pix/walls/sara
 #WALL_DIR=/home/hakirot/pix/walls/walls
