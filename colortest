@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 printf "      bkgd  blak  red   gren  yllw  blue  mage  cyan  whit\n"
 printf "          "
