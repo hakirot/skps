@@ -4,8 +4,8 @@ set -eou pipefail
 # SAVE OPTION
 wall=netrunner
 
-WALL_DIR=/home/hakirot/pix/walls/sara
-#WALL_DIR=/home/hakirot/pix/walls/walls
+#WALL_DIR=/home/hakirot/pix/walls/sara
+WALL_DIR=/home/hakirot/pix/walls/walls
 #WALL_DIR=/home/hakirot/pix/walls/alex_steven_martin
 
 
@@ -27,6 +27,7 @@ if  [[ $# -eq 1 && $1 != "-r" ]]; then
 # If no save, randomize
 #elif [ -z ${wall+x} ]; then
 elif [ -z ${wall+x} ] || [ "$random_flag" -eq 1 ]; then
+  # TODO: assert random wall is different than current
   node_name=$(ls -1 $WALL_DIR | shuf -n 1)
   wall=$WALL_DIR/$node_name
 # Else execute save
