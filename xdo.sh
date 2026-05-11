@@ -96,7 +96,3 @@ if [ "$1" -eq "3" ]; then
   xdotool key alt+backslash
   xdotool key alt+h
 fi
-
-if [ "$1" -eq "4" ]; then
-
-fi

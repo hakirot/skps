@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/hakirot/pix/walls/amir_zand/detach.jpg",
+    "alpha": "92",
+
+    "special": {
+        "background": "#0b0b0c",
+        "foreground": "#ddd5cf",
+        "cursor": "#ddd5cf"
+    },
+    "colors": {
+        "color0": "#232326",
+        "color1": "#93836d",
+        "color2": "#9E4947",
+        "color3": "#8C746F",
+        "color4": "#98867A",
+        "color5": "#708E85",
+        "color6": "#A69F96",
+        "color7": "#ddd5cf",
+        "color8": "#9a9590",
+        "color9": "#6D6261",
+        "color10": "#542827",
+        "color11": "#514340",
+        "color12": "#473f39",
+        "color13": "#708E85",
+        "color14": "#514e49",
+        "color15": "#ddd5cf"
+    }
+}
