@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/hakirot/pix/walls/all_wall/alley",
+    "alpha": "92",
+
+    "special": {
+        "background": "#010103",
+        "foreground": "#c5d7db",
+        "cursor": "#c5d7db"
+    },
+    "colors": {
+        "color0": "#010103",
+        "color1": "#417ae2",
+        "color2": "#767ce0",
+        "color3": "#376CC7",
+        "color4": "#5367CB",
+        "color5": "#2C9FA3",
+        "color6": "#3FADC1",
+        "color7": "#c5d7db",
+        "color8": "#899699",
+        "color9": "#2D56A0",
+        "color10": "#565AA9",
+        "color11": "#376CC7",
+        "color12": "#5367CB",
+        "color13": "#2C9FA3",
+        "color14": "#2a707c",
+        "color15": "#c5d7db"
+    }
+}

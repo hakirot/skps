@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 xdotool key super+e
-xdotool key super+1
-xdotool key super+space
+#xdotool key super+1
+#xdotool key super+space
 xdotool key super+3
 source /home/hakirot/skps/spawns
 xdotool key super+2
