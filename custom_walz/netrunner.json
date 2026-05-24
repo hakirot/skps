@@ -1,9 +1,8 @@
 {
-    "wallpaper": "/home/hakirot/pix/screenshots/05-05-2026-003006.png",
     "alpha": "92",
 
     "special": {
-        "background": "#040C12",
+        "background": "#02060a",
         "foreground": "#89cfc1",
         "cursor": "#89cfc1"
     },

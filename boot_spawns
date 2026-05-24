@@ -12,8 +12,7 @@ sleep .25
 xdotool type "firefox"
 sleep .25
 xdotool key KP_Enter
-sleep 2
+sleep 1.5
 xdotool key KP_Enter
 sleep 1
 xdotool key super+1
-sleep .5

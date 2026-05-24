@@ -2,7 +2,7 @@
 
 xdotool type "cd $PWD"
 xdotool key KP_Enter 
-xdotool type "gdv; xdotool key super+c"
+xdotool type "gdv; SARA"
 xdotool key KP_Enter 
 xdotool key asterisk
 xdotool type "gg"

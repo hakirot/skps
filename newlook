@@ -2,17 +2,16 @@
 set -eou pipefail
 
 # SAVE OPTION
-#wall=detach
+wall=detach
 
 #DIR_1=/home/hakirot/pix/walls/walls
 #DIR_2=/home/hakirot/pix/walls/alex_steven_martin
 #DIR_3=/home/hakirot/pix/walls/amir_zand
 
-
-
 #num=$(( (RANDOM % 4) + 1 ))
 
-WALL_DIR=/home/hakirot/pix/walls/all_wall
+#WALL_DIR=/home/hakirot/pix/walls/all_wall
+WALL_DIR=/home/hakirot/pix/walls/sara
 
 #if [ "$num" -eq 1 ]; then
 #    WALL_DIR="$DIR_1"
