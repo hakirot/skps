@@ -2,7 +2,7 @@
 set -eou pipefail
 
 # SAVE OPTION
-wall=detach
+wall=dystopia_darkened
 
 #DIR_1=/home/hakirot/pix/walls/walls
 #DIR_2=/home/hakirot/pix/walls/alex_steven_martin

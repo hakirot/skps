@@ -2,8 +2,9 @@
 
 xdotool key super+e
 #xdotool key super+1
-#xdotool key super+space
 xdotool key super+3
+xdotool key super+space
+sleep .25
 source /home/hakirot/skps/spawns
 xdotool key super+2
 xdotool key super+w
@@ -16,3 +17,4 @@ sleep 1.5
 xdotool key KP_Enter
 sleep 1
 xdotool key super+1
+xdotool key super+c

@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 
-sleep .25
-xdotool key super+space
-sleep .5
+#sleep .25
+#xdotool key super+space
+#sleep .5
+xdotool key alt+minus
 xdotool key M
 xdotool key KP_Enter
 xdotool key KP_Enter
@@ -18,6 +19,15 @@ sleep 1
 xdotool type "asdf"
 xdotool key KP_Enter
 
+sleep .25
+xdotool key alt+minus
+xdotool key q
+xdotool type "proxy2"
+xdotool key KP_Enter
+sleep 1
+xdotool type "gabagool"
+xdotool key KP_Enter
+
 xdotool key control+j
 xdotool key c
 
@@ -31,6 +41,9 @@ sleep .25
 xdotool key j
 sleep .25
 xdotool key j
+
+xdotool key alt+j
+xdotool key Q
 
 # blink
 xdotool key alt+x
