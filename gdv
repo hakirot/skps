@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-
-xdotool type "cd $PWD"
-xdotool key KP_Enter 
-xdotool type "gdv; SARA"
-xdotool key KP_Enter 
-xdotool key asterisk
-xdotool type "gg"

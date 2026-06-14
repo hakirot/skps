@@ -7,7 +7,7 @@ if [[ $# -eq 1 && $1 == "-d" ]]; then
   xdotool key KP_Enter 
   xdotool key asterisk
   xdotool type "gg"
-elif [[ $# -eq 1 && $1 == "-d" ]]; then
+elif [[ $# -eq 1 && $1 == "-l" ]]; then
   xdotool type "cd $PWD"
   xdotool key KP_Enter 
   xdotool type "git log | v; SARA"
