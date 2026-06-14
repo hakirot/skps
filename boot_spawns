@@ -16,5 +16,14 @@ xdotool key KP_Enter
 sleep 1.5
 xdotool key KP_Enter
 sleep 1
+
+xdotool key super+5
+xdotool key super+BackSpace
+sleep .25
+xdotool type "qutebrowser"
+sleep .25
+xdotool key KP_Enter
+sleep 1
+
 xdotool key super+1
 xdotool key super+c
