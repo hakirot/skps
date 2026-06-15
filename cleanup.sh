@@ -16,4 +16,5 @@ rm -f $HOME/dls/session/rtorrent.input_history
 rm -rf $HOME/.cache/ueberzugpp
 rm -rf $HOME/.cache/ueberzug
 rm -rf $HOME/deleteme
+rm -rf $HOME/.bash_history
 sleep 1
