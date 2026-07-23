@@ -2,16 +2,16 @@
 set -eou pipefail
 
 # SAVE OPTION
-wall=cybercity
+wall=space_nord
 
-#DIR_1=/home/hakirot/pix/walls/walls
-#DIR_2=/home/hakirot/pix/walls/alex_steven_martin
-#DIR_3=/home/hakirot/pix/walls/amir_zand
+#DIR_1=/home/roe/pix/walls/walls
+#DIR_2=/home/roe/pix/walls/alex_steven_martin
+#DIR_3=/home/roe/pix/walls/amir_zand
 
 #num=$(( (RANDOM % 4) + 1 ))
 
-WALL_DIR=/home/hakirot/pix/walls/all_wall
-#WALL_DIR=/home/hakirot/pix/walls/sara
+WALL_DIR=/home/roe/pix/walls/all_wall
+#WALL_DIR=/home/roe/pix/walls/sara
 
 #if [ "$num" -eq 1 ]; then
 #    WALL_DIR="$DIR_1"
@@ -24,7 +24,7 @@ WALL_DIR=/home/hakirot/pix/walls/all_wall
 RED='\033[0;31m'
 RESET='\033[0m'
 
-THEMES_DIR=/home/hakirot/skps/custom_walz
+THEMES_DIR=/home/roe/skps/custom_walz
 
 random_flag=0
 if [[ $# -eq 1 && $1 == "-r" ]]; then
@@ -70,8 +70,8 @@ else
   echo -e "${RED}newlook: using wal-generated theme${RESET}"
 fi
 
-nohup bash -c "/home/hakirot/.config/polybar/bar.sh" 2>&1 > /dev/null &
-cp /home/hakirot/.cache/wal/colors-wal-dmenu.h /home/hakirot/git/suckless-hakirot/dmenu
-cd /home/hakirot/git/suckless-hakirot/dmenu
+nohup bash -c "/home/roe/.config/polybar/bar.sh" 2>&1 > /dev/null &
+cp /home/roe/.cache/wal/colors-wal-dmenu.h /home/roe/git/suckless-hakirot/dmenu
+cd /home/roe/git/suckless-hakirot/dmenu
 make
 make clean

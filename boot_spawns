@@ -5,7 +5,7 @@ xdotool key super+e
 xdotool key super+3
 xdotool key super+space
 sleep .25
-source /home/hakirot/skps/spawns
+source /home/roe/skps/spawns
 xdotool key super+2
 xdotool key super+w
 xdotool key super+BackSpace
