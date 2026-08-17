@@ -35,7 +35,7 @@ if [ "$choice" = "Screens" ]; then
     elif [ "$choice" = "HDMI Off" ]; then
       xrandr --output HDMI-A-0 --off
     elif [ "$choice" = "HDMI On" ]; then
-      xrandr --output HDMI-A-0 --on
+      xrandr --output HDMI-A-0 --mode 2560x1600
     elif [ "$choice" = "Rotate Right" ]; then
       xrandr --output HDMI-A-0 --rotate right
     elif [ "$choice" = "Rotate Left" ]; then

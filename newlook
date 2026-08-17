@@ -2,7 +2,7 @@
 set -eou pipefail
 
 # SAVE OPTION
-wall=space_nord
+wall=detach
 
 #DIR_1=/home/roe/pix/walls/walls
 #DIR_2=/home/roe/pix/walls/alex_steven_martin

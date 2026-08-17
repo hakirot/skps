@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+ffmpeg -ss 2 -i $1 -t 2 \
+    -vf "crop=1220:760:0:320,scale=1200:-2" \
+    -r 30 \
+    -c:v libvpx-vp9 \
+    -crf 28 \
+    -b:v 0 \
+    -an \
+    demo.webm
