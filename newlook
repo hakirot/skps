@@ -4,14 +4,14 @@ set -eou pipefail
 # SAVE OPTION
 wall=detach
 
-#DIR_1=/home/roe/pix/walls/walls
-#DIR_2=/home/roe/pix/walls/alex_steven_martin
-#DIR_3=/home/roe/pix/walls/amir_zand
+#DIR_1=$HOME/pix/walls/walls
+#DIR_2=$HOME/pix/walls/alex_steven_martin
+#DIR_3=$HOME/pix/walls/amir_zand
 
 #num=$(( (RANDOM % 4) + 1 ))
 
-WALL_DIR=/home/roe/pix/walls/all_wall
-#WALL_DIR=/home/roe/pix/walls/sara
+WALL_DIR=$HOME/pix/walls/all_wall
+#WALL_DIR=$HOME/pix/walls/sara
 
 #if [ "$num" -eq 1 ]; then
 #    WALL_DIR="$DIR_1"
@@ -24,7 +24,7 @@ WALL_DIR=/home/roe/pix/walls/all_wall
 RED='\033[0;31m'
 RESET='\033[0m'
 
-THEMES_DIR=/home/roe/skps/custom_walz
+THEMES_DIR=$HOME/skps/custom_walz
 
 random_flag=0
 if [[ $# -eq 1 && $1 == "-r" ]]; then
@@ -70,8 +70,8 @@ else
   echo -e "${RED}newlook: using wal-generated theme${RESET}"
 fi
 
-nohup bash -c "/home/roe/.config/polybar/bar.sh" 2>&1 > /dev/null &
-cp /home/roe/.cache/wal/colors-wal-dmenu.h /home/roe/git/suckless-hakirot/dmenu
-cd /home/roe/git/suckless-hakirot/dmenu
+nohup bash -c "$HOME/.config/polybar/bar.sh" 2>&1 > /dev/null &
+cp $HOME/.cache/wal/colors-wal-dmenu.h $HOME/git/suckless-hakirot/dmenu
+cd $HOME/git/suckless-hakirot/dmenu
 make
 make clean
