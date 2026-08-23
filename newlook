@@ -4,22 +4,7 @@ set -eou pipefail
 # SAVE OPTION
 wall=detach
 
-#DIR_1=$HOME/pix/walls/walls
-#DIR_2=$HOME/pix/walls/alex_steven_martin
-#DIR_3=$HOME/pix/walls/amir_zand
-
-#num=$(( (RANDOM % 4) + 1 ))
-
 WALL_DIR=$HOME/pix/walls/all_wall
-#WALL_DIR=$HOME/pix/walls/sara
-
-#if [ "$num" -eq 1 ]; then
-#    WALL_DIR="$DIR_1"
-#elif [ "$num" -eq 2 ]; then
-#    WALL_DIR="$DIR_2"
-#elif [ "$num" -eq 3 ]; then
-#    WALL_DIR="$DIR_3"
-#fi
 
 RED='\033[0;31m'
 RESET='\033[0m'

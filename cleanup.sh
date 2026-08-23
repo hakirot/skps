@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+rm -f $HOME/.config/pw.gpg
 rm -rf $HOME/.cache/sxiv/
 rm -rf $HOME/.cache/ranger/
 rm -rf $HOME/.cache/sara

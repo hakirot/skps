@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/roe/pix/walls/waves.png",
+    "alpha": "92",
+
+    "special": {
+        "background": "#050505",
+        "foreground": "#eae3c3",
+        "cursor": "#eae3c3"
+    },
+    "colors": {
+        "color0": "#1e171c",
+        "color1": "#a0707e",
+        "color2": "#D06941",
+        "color3": "#A09068",
+        "color4": "#D2BA5F",
+        "color5": "#59A081",
+        "color6": "#9cada4",
+        "color7": "#eae3c3",
+        "color8": "#a39e88",
+        "color9": "#a0707e",
+        "color10": "#D06941",
+        "color11": "#6b6045",
+        "color12": "#D2BA5F",
+        "color13": "#59A081",
+        "color14": "#494943",
+        "color15": "#eae3c3"
+    }
+}
