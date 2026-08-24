@@ -34,7 +34,7 @@ else
 fi
 
 # Add this as background wallpaper
-xwallpaper --center $wall
+xwallpaper --zoom $wall
 
 # Clear
 wal -c
