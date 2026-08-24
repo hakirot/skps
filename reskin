@@ -34,25 +34,25 @@ else
 fi
 
 # Add this as background wallpaper
-xwallpaper --zoom $wall
+xwallpaper --center $wall
 
 # Clear
 wal -c
 
-echo -e "${RED}newlook: $node_name${RESET}"
-echo -e "${RED}newlook: locating: $node_name.json${RESET}"
+echo -e "${RED}reskin: $node_name${RESET}"
+echo -e "${RED}reskin: locating: $node_name.json${RESET}"
 
 if [[ -f "$THEMES_DIR/$node_name.json" ]]; then
-  echo -e "${RED}newlook: custom theme file located${RESET}"
+  echo -e "${RED}reskin: custom theme file located${RESET}"
 else
   echo -e "${RED}nelook: custom theme file not available${RESET}"
 fi
 
 if wal -a 92 -f "$THEMES_DIR/$node_name.json"; then
-  echo -e "${RED}newlook: applied custom theme${RESET}"
+  echo -e "${RED}reskin: applied custom theme${RESET}"
 else
   wal -a 92 -i $wall
-  echo -e "${RED}newlook: using wal-generated theme${RESET}"
+  echo -e "${RED}reskin: using wal-generated theme${RESET}"
 fi
 
 nohup bash -c "$HOME/.config/polybar/bar.sh" 2>&1 > /dev/null &

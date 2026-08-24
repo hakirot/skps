@@ -11,4 +11,4 @@ Process (Files do not need to be formatted before installing, just proper json)
 
     nvim [custom-theme]
 
-Then just run the newlook on the image file
+Then just run the reskin on the image file
