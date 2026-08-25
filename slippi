@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-
-exec ~/gmz/Slippi-Launcher-2.13.3-x86_64.AppImage

@@ -1,1 +1,4 @@
-# Useful skrimps
+
+# skrimp
+
+~/.local/bin
