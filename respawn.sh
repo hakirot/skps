@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
 
-xdotool key super+e
-source $HOME/skps/reskin -r
-#sleep .5
-xdotool key X
-xdotool key super+space
-xdotool key super+h
-#sleep .5
 
-xdotool key super+w
+nohup bash -c "$HOME/skps/reskin -r" 2&>1 /dev/null
+nohup bash -c "sleep 1; xdotool key super+space" 2&>1 /dev/null
+
+if [[ -z "${VAR}" ]]; then
+  nohup bash -c "sleep .5; xdotool key super+q"
+  tmux kill-session
+else
+  echo ${PPID} > $HOME/ppid
+fi
