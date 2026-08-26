@@ -4,7 +4,7 @@
 # but please report mistakes to me :)
 
 music_dir="$HOME/mzk"
-fallback_image=/home/roe/pix/falling.png
+fallback_image=$HOME/pix/gimp/cache-coyote/favicon.png
 
 
 find_cover () {
@@ -29,9 +29,16 @@ find_cover () {
 }
 
 send () {
-    notify-send --expire-time 3000 -i "${cover_path}" "${artist}" "$(mpc current)" || \
-    notify-send --expire-time 3000 -i "${fallback_image}" "Now Playing:" "$(mpc current)"
+    if test -z "$artist"; then
+      notify-send --expire-time 3000 -i "${cover_path}" "[]" "$(mpc current)" || \
+      notify-send --expire-time 3000 -i "${fallback_image}" "[]" "$(mpc current)"
+    else
+      notify-send --expire-time 3000 -i "${cover_path}" "${artist}" "$(mpc current)" || \
+      notify-send --expire-time 3000 -i "${fallback_image}" "${artist}" "$(mpc current)"
+    fi
 }
 
-find_cover 2>/dev/null
-send       2>/dev/null
+find_cover
+send
+#find_cover 2>/dev/null
+#send       2>/dev/null
