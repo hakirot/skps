@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
 
 pkill -9 dunst
-#nohup dunst 2>&1 >/dev/null &
-nohup dunst 2>&1 >$HOME/dunst.out &
+nohup dunst 2>&1 >/dev/null &

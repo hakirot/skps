@@ -57,5 +57,11 @@ cd $HOME/git/suckless-hakirot/dmenu
 make
 make clean
 
-# notifications
-
+# dunstrc notifications
+frame_color=$(sed -n '2p' ${HOME}/.cache/wal/colors)
+sed -i "s/frame_color = \"#[0-9A-Fa-f]\{6\}\"/frame_color = \"$frame_color\"/g" ${HOME}/.config/dunst/dunstrc
+background=$(sed -n '1p' ${HOME}/.cache/wal/colors)
+sed -i "s/background = \"#[0-9A-Fa-f]\{6\}\"/background = \"$background\"/g" ${HOME}/.config/dunst/dunstrc
+foreground=$(sed -n '8p' ${HOME}/.cache/wal/colors)
+sed -i "s/foreground = \"#[0-9A-Fa-f]\{6\}\"/foreground = \"$foreground\"/g" ${HOME}/.config/dunst/dunstrc
+dunst_restart
