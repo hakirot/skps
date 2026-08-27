@@ -4,7 +4,7 @@ set -eou pipefail
 # SAVE OPTION
 wall=detach
 
-WALL_DIR=$HOME/pix/walls/all_wall
+WALL_DIR=$HOME/pix/walls/
 
 RED='\033[0;31m'
 RESET='\033[0m'
