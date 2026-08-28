@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 set -eou pipefail
+WD40=$PWD
 
 # SAVE OPTION
 wall=detach
@@ -65,3 +66,9 @@ sed -i "s/background = \"#[0-9A-Fa-f]\{6\}\"/background = \"$background\"/g" ${H
 foreground=$(sed -n '8p' ${HOME}/.cache/wal/colors)
 sed -i "s/foreground = \"#[0-9A-Fa-f]\{6\}\"/foreground = \"$foreground\"/g" ${HOME}/.config/dunst/dunstrc
 dunst_restart
+
+if [ $# -eq 1 ] && [ -e ${WD40}/$1 ]; then
+  notify-send --expire-time 3000 -i "${WD40}/${wall}" "Reskin" "${node_name}"
+else
+  notify-send --expire-time 3000 -i "${wall}" "Reskin" "${node_name}"
+fi
