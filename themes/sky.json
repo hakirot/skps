@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/roe/pix/sky.png",
+    "alpha": "92",
+
+    "special": {
+        "background": "#090c0c",
+        "foreground": "#dfe7cd",
+        "cursor": "#dfe7cd"
+    },
+    "colors": {
+        "color0": "#222d2d",
+        "color1": "#A99166",
+        "color2": "#59AF8C",
+        "color3": "#61BA94",
+        "color4": "#A9AF8D",
+        "color5": "#C2BD9D",
+        "color6": "#A1D19F",
+        "color7": "#dfe7cd",
+        "color8": "#9ca18f",
+        "color9": "#A99166",
+        "color10": "#59AF8C",
+        "color11": "#61BA94",
+        "color12": "#A9AF8D",
+        "color13": "#C2BD9D",
+        "color14": "#A1D19F",
+        "color15": "#dfe7cd"
+    }
+}
