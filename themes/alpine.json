@@ -1,18 +1,24 @@
-{"special":{"background":"#121619","foreground":"#caccca","cursor":"#caccca"},
-  "colors":{
-    "color0":"#2e383f",
-    "color1":"#bcc2be",
-    "color2":"#e29756",
-    "color3":"#f78c56",
-    "color4":"#C3BDB1",
-    "color5":"#cec7b9",
-    "color6":"#a7b0b2",
-    "color7":"#caccca",
-    "color8":"#6B7D82",
-    "color9":"#abb2ad",
-    "color10":"#bc7e47",
-    "color11":"#c9633b",
-    "color12":"#b2afa9",
-    "color13":"#cec7b9",
-    "color14":"#6b7d82",
-    "color15":"#caccca"}}
+{
+    "wallpaper": "/home/roe/pix/walls/alpine",
+    "special":{
+      "background":"#121619",
+      "foreground":"#caccca",
+      "cursor":"#caccca"
+    },
+    "colors":{
+      "color0":"#2e383f",
+      "color1":"#bcc2be",
+      "color2":"#e29756",
+      "color3":"#f78c56",
+      "color4":"#C3BDB1",
+      "color5":"#cec7b9",
+      "color6":"#a7b0b2",
+      "color7":"#caccca",
+      "color8":"#6B7D82",
+      "color9":"#abb2ad",
+      "color10":"#bc7e47",
+      "color11":"#c9633b",
+      "color12":"#b2afa9",
+      "color13":"#cec7b9",
+      "color14":"#6b7d82",
+      "color15":"#caccca"}}
