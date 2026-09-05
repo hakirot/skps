@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+pkill -9 picom
+nohup picom 2>&1 >/dev/null &

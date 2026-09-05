@@ -23,7 +23,7 @@ elif [[ $# -eq 1 && $1 == "-s" ]]; then
 fi
 
 if  [ "$same_flag" -eq 1 ]; then
-  wall=$(jq -r 'to_entries[0].value' ${HOME}/.cache/wal/colors.json)
+  wall=$(jq -r 'to_entries[1].value' ${HOME}/.cache/wal/colors.json)
   node_name="${wall##*/}"
 
 # Prioritize command-line arg

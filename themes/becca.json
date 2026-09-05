@@ -1,0 +1,29 @@
+{
+    "checksum": "970919270adb293a0f12cdf7dcb6eab0",
+    "wallpaper": "/home/roe/pix/sara/becca",
+    "alpha": "92",
+
+    "special": {
+        "background": "#0d0d0c",
+        "foreground": "#c6c6c2",
+        "cursor": "#c6c6c2"
+    },
+    "colors": {
+        "color0": "#1e1d0d",
+        "color1": "#A6A26B",
+        "color2": "#C4B646",
+        "color3": "#7A7091",
+        "color4": "#70AA8C",
+        "color5": "#c27546",
+        "color6": "#A3AF9F",
+        "color7": "#c6c6c2",
+        "color8": "#49471f",
+        "color9": "#A6A26B",
+        "color10": "#C4B646",
+        "color11": "#7A7091",
+        "color12": "#70AA8C",
+        "color13": "#c27546",
+        "color14": "#A3AF9F",
+        "color15": "#c6c6c2"
+    }
+}

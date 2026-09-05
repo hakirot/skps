@@ -1,0 +1,29 @@
+{
+    "checksum": "20a9013492f88906a4c6c50d3f1fec75",
+    "wallpaper": "/home/roe/Downloads/adrian-marc-jolua-cyberpunk-red.jpg",
+    "alpha": "92",
+
+    "special": {
+        "background": "#0d0d0d",
+        "foreground": "#c2c7c5",
+        "cursor": "#c2c7c5"
+    },
+    "colors": {
+        "color0": "#0d2017",
+        "color1": "#6E241E",
+        "color2": "#7A2720",
+        "color3": "#85281F",
+        "color4": "#902A22",
+        "color5": "#9E2D24",
+        "color6": "#B02E25",
+        "color7": "#c2c7c5",
+        "color8": "#5d7168",
+        "color9": "#6E241E",
+        "color10": "#7A2720",
+        "color11": "#85281F",
+        "color12": "#902A22",
+        "color13": "#9E2D24",
+        "color14": "#B02E25",
+        "color15": "#c2c7c5"
+    }
+}
