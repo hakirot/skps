@@ -1,0 +1,29 @@
+{
+    "checksum": "e66ab9914ddcef5490d779468413e92a",
+    "wallpaper": "/home/roe/pix/walls/candyfloss",
+    "alpha": "92",
+
+    "special": {
+        "background": "#161216",
+        "foreground": "#c7cccf",
+        "cursor": "#c7cccf"
+    },
+    "colors": {
+        "color0": "#1f3340",
+        "color1": "#CC7B84",
+        "color2": "#7B9698",
+        "color3": "#908E92",
+        "color4": "#A49F9E",
+        "color5": "#CF8F8E",
+        "color6": "#E6A299",
+        "color7": "#c7cccf",
+        "color8": "#6b7a83",
+        "color9": "#CC7B84",
+        "color10": "#7B9698",
+        "color11": "#908E92",
+        "color12": "#A49F9E",
+        "color13": "#CF8F8E",
+        "color14": "#E6A299",
+        "color15": "#c7cccf"
+    }
+}
