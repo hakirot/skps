@@ -1,0 +1,29 @@
+{
+    "checksum": "ea020c576ce494d5fa313e04571b3c1e",
+    "wallpaper": "/home/roe/pix/walls/marcel-deneuve-giant-tubes",
+    "alpha": "92",
+
+    "special": {
+        "background": "#070708",
+        "foreground": "#c3c5c8",
+        "cursor": "#c3c5c8"
+    },
+    "colors": {
+        "color0": "#0f1a23",
+        "color1": "#595F64",
+        "color2": "#857869",
+        "color3": "#988F75",
+        "color4": "#5C7686",
+        "color5": "#77868F",
+        "color6": "#9DA3A2",
+        "color7": "#c3c5c8",
+        "color8": "#5e6a74",
+        "color9": "#595F64",
+        "color10": "#857869",
+        "color11": "#988F75",
+        "color12": "#5C7686",
+        "color13": "#77868F",
+        "color14": "#9DA3A2",
+        "color15": "#c3c5c8"
+    }
+}
