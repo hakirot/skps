@@ -1,0 +1,29 @@
+{
+    "checksum": "e956fed9baf54171bf72dc8487a52338",
+    "wallpaper": "/home/roe/pix/walls/leaves",
+    "alpha": "92",
+
+    "special": {
+        "background": "#0c0805",
+        "foreground": "#c5c3c1",
+        "cursor": "#c5c3c1"
+    },
+    "colors": {
+        "color0": "#17110a",
+        "color1": "#6F0F23",
+        "color2": "#964e5c",
+        "color3": "#995a6a",
+        "color4": "#6B4D55",
+        "color5": "#850F17",
+        "color6": "#912815",
+        "color7": "#c5c3c1",
+        "color8": "#6d6459",
+        "color9": "#6F0F23",
+        "color10": "#522931",
+        "color11": "#613944",
+        "color12": "#6B4D55",
+        "color13": "#850F17",
+        "color14": "#912815",
+        "color15": "#c5c3c1"
+    }
+}
