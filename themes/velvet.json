@@ -1,0 +1,29 @@
+{
+    "checksum": "5c07c8e9c669c0ebb96ce09eeb6f4c5e",
+    "wallpaper": "/home/roe/pix/walls/velvet",
+    "alpha": "92",
+
+    "special": {
+        "background": "#050505",
+        "foreground": "#c2c0c0",
+        "cursor": "#c2c0c0"
+    },
+    "colors": {
+        "color0": "#0c0505",
+        "color1": "#212121",
+        "color2": "#252525",
+        "color3": "#2B2B2B",
+        "color4": "#343434",
+        "color5": "#414141",
+        "color6": "#020202",
+        "color7": "#c2c0c0",
+        "color8": "#675555",
+        "color9": "#212121",
+        "color10": "#252525",
+        "color11": "#2B2B2B",
+        "color12": "#343434",
+        "color13": "#414141",
+        "color14": "#020202",
+        "color15": "#c2c0c0"
+    }
+}
