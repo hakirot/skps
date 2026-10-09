@@ -17,12 +17,6 @@ random_flag=0
 same_flag=0
 same_wall_flag=0
 
-#if [[ $# -eq 1 && $1 == "-r" ]]; then
-#  random_flag=1
-#elif [[ $# -eq 1 && $1 == "-s" ]]; then
-#  same_flag=1
-#fi
-
 while getopts "wrs" opt; do
   case "${opt}" in
     w)
