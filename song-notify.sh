@@ -29,6 +29,7 @@ find_cover () {
 }
 
 send () {
+    dunstctl close
     if test -z "$artist"; then
       notify-send --expire-time 3000 -i "${cover_path}" "[]" "$(mpc current)" || \
       notify-send --expire-time 3000 -i "${fallback_image}" "[]" "$(mpc current)"
