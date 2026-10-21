@@ -4,7 +4,7 @@
 # but please report mistakes to me :)
 
 music_dir="$HOME/mzk"
-fallback_image=$HOME/pix/gimp/cache-coyote/favicon.png
+fallback_image=$HOME/path/to/fallback_image
 
 
 find_cover () {
