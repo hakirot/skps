@@ -5,13 +5,11 @@ set -eou pipefail
 
 # SAVE OPTION
 wall=detach
-
 WALL_DIR=$HOME/pix/walls/
+THEMES_DIR=$HOME/skps/themes
 
 RED='\033[0;31m'
 RESET='\033[0m'
-
-THEMES_DIR=$HOME/skps/themes
 
 random_flag=0
 same_flag=0
@@ -94,7 +92,7 @@ make
 make clean
 
 # dunstrc notifications
-frame_color=$(sed -n '2p' ${HOME}/.cache/wal/colors)
+frame_color=$(sed -n '3p' ${HOME}/.cache/wal/colors)
 sed -i "s/frame_color = \"#[0-9A-Fa-f]\{6\}\"/frame_color = \"$frame_color\"/g" ${HOME}/.config/dunst/dunstrc
 background=$(awk 'NR == 2 {print $2}' ${HOME}/.cache/wal/colors-kitty.conf)
 sed -i "s/background = \"#[0-9A-Fa-f]\{6\}\"/background = \"$background\"/g" ${HOME}/.config/dunst/dunstrc
