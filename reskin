@@ -92,7 +92,7 @@ make
 make clean
 
 # dunstrc notifications
-frame_color=$(sed -n '3p' ${HOME}/.cache/wal/colors)
+frame_color=$(sed -n '2p' ${HOME}/.cache/wal/colors)
 sed -i "s/frame_color = \"#[0-9A-Fa-f]\{6\}\"/frame_color = \"$frame_color\"/g" ${HOME}/.config/dunst/dunstrc
 background=$(awk 'NR == 2 {print $2}' ${HOME}/.cache/wal/colors-kitty.conf)
 sed -i "s/background = \"#[0-9A-Fa-f]\{6\}\"/background = \"$background\"/g" ${HOME}/.config/dunst/dunstrc
